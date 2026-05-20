@@ -1,0 +1,67 @@
+:root{
+    --main-color:#292929;
+    --red-color:#920106;
+    --figure_seal-color:#780000;
+    --base-red: #833138;
+    --paper-color: #DBDBD9;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: local("Quicksand Regular"),
+    local("Quicksand-Regular"),
+    url("./fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("./fonts/Quicksand-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: local("Quicksand Bold"),
+    local("Quicksand-Bold"),
+    url("./fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("./fonts/Quicksand-Bold.woff") format("woff");
+    font-weight: Bold;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: local("Caveat Bold"),
+    local("Caveat-Bold"),
+    url("./fonts/Caveat-Bold.woff2") format("woff2"),
+    url("./fonts/Caveat-Bold.woff") format("woff");
+    font-weight: Bold;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: local("Caveat Regular"),
+    local("Caveat-Regular"),
+    url("./fonts/Caveat-Regular.woff2") format("woff2"),
+    url("./fonts/Caveat-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Disruptors Script";
+    src: local("Disruptors Script Regular"),
+    local("DisruptorsScript-Regular"),
+    url("./fonts/DisruptorsScript-Regular.woff2") format("woff2"),
+    url("./fonts/DisruptorsScript-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: normal;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
