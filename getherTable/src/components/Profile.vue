@@ -23,11 +23,46 @@
                                             alt="Logo icon"></div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="create-review">
+
+                        <!-- Кнопка или форма создания -->
+                        <div v-if="!isCreating" class="create-review" @click="showCreateForm">
                             Оставить отзыв
                         </div>
+
+                        <!-- Форма создания нового отзыва (копия структуры review) -->
+                        <div v-else style="margin-top: 7px;">
+                            <div class="review">
+                                <div class="review-column">
+                                    <img :src="Logo" alt="avatar">
+                                </div>
+                                <div class="review-column">
+                                    <span>Социалка</span>
+                                    <span>Бой</span>
+                                </div>
+                                <div class="review-column">
+                                    <div class="rating-group">
+                                        <div class="rating-star">
+                                            <img v-for="n in 3" :key="n" @click="setSocRating(n)"
+                                                :src="n <= newReview.meaning_soc ? Logo_Red : Logo_Red_Gray"
+                                                class="Logo-icon clickable" alt="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating-group">
+                                        <div class="rating-star">
+                                            <img v-for="n in 3" :key="n" @click="setFigRating(n)"
+                                                :src="n <= newReview.meaning_fig ? Logo_Red : Logo_Red_Gray"
+                                                class="Logo-icon clickable" alt="rating">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button @click="saveReview" class="save-btn">Сохранить</button>
+                                <button @click="cancelCreate" class="cancel-btn">Отмена</button>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="card-column">
                         <h1>Игрок</h1>
@@ -66,71 +101,61 @@
 import Base from './Base.vue'
 import Logo from './../assets/Logo.png'
 import Logo_Red from './../assets/FrogRed.svg'
-
-const reviwsItems = [
+import Logo_Red_Gray from './../assets/FrogRed.svg' // или создайте копию с другим цветом
+import { ref } from 'vue'
+const reviwsItems = ref([
     { id: '1', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 3 },
     { id: '2', link: '#', src: Logo, meaning_soc: 2, meaning_fig: 3 },
     { id: '3', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 1 },
     { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-]
+    { id: '5', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '6', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '7', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '8', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '9', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '10', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '11', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+])
 
-// Состояние формы
 const isCreating = ref(false)
 
-// Новый отзыв
 const newReview = ref({
     meaning_soc: 0,
     meaning_fig: 0
 })
 
-// Показать форму создания
 function showCreateForm() {
     isCreating.value = true
 }
 
-// Установить рейтинг для социалки
 function setSocRating(rating) {
     newReview.value.meaning_soc = rating
 }
 
-// Установить рейтинг для боя
 function setFigRating(rating) {
     newReview.value.meaning_fig = rating
 }
 
-// Сохранить отзыв
 function saveReview() {
     if (newReview.value.meaning_soc === 0 || newReview.value.meaning_fig === 0) {
-        alert('Пожалуйста, оцените оба параметра')
+        alert('Выберите оценку')
         return
     }
-    
-    // Создаем новый отзыв
+
     const newId = (Math.max(...reviwsItems.value.map(item => parseInt(item.id))) + 1).toString()
-    
-    const reviewToAdd = {
+
+    reviwsItems.value.push({
         id: newId,
         link: '#',
         src: Logo,
         meaning_soc: newReview.value.meaning_soc,
         meaning_fig: newReview.value.meaning_fig
-    }
-    
-    // Добавляем в начало или конец массива
-    reviwsItems.value.push(reviewToAdd)
-    
-    // Сброс формы
+    })
+
     newReview.value = { meaning_soc: 0, meaning_fig: 0 }
     isCreating.value = false
-    
-    // Прокрутка к новому отзыву
+
+    // Прокрутка вниз
     setTimeout(() => {
         const reviewsContainer = document.querySelector('.reviews')
         if (reviewsContainer) {
@@ -139,7 +164,6 @@ function saveReview() {
     }, 100)
 }
 
-// Отмена создания
 function cancelCreate() {
     newReview.value = { meaning_soc: 0, meaning_fig: 0 }
     isCreating.value = false
@@ -329,5 +353,67 @@ section {
 
 .create-review:hover::after {
     opacity: 1;
+}
+
+/* new style for createReview */
+
+.rating-group {
+    display: flex;
+    gap: 4px;
+}
+
+.rating-star {
+    display: flex;
+    gap: 4px;
+}
+
+.rating-star img {
+    width: 22px;
+    height: 23px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.rating-star img:hover {
+    transform: scale(1.1);
+}
+
+/* Кнопки действий */
+.form-actions {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    z-index: 10;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 4px 12px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.save-btn {
+    background: #833138;
+    color: white;
+}
+
+.cancel-btn {
+    background: #666;
+    color: white;
+}
+
+.save-btn:hover,
+.cancel-btn:hover {
+    opacity: 0.8;
 }
 </style>
