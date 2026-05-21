@@ -249,7 +249,7 @@ input[id="genre"] {
 
 input[id="quantity"] {
     width: 1.6vw;
-    margin-left: 5vw;
+    margin-left: 6.01vw;
 }
 
 input[id="restrictions"] {

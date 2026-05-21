@@ -4,10 +4,11 @@ import './assets/normalize.css'
 import Main from './components/Main.vue';
 import Games from './components/Games.vue';
 import CreateGames from './components/CreateGames.vue';
+import Profile from './components/Profile.vue';
 </script>
 
 <template>
-  <createGames />
+  <Profile />
 </template>
 
 <style scoped>
