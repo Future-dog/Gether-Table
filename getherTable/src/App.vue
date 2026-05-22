@@ -11,7 +11,15 @@ import Profile from './components/Profile.vue';
   <Profile />
 </template>
 
-<style scoped>
+<style>
 @import './assets/normalize.css';
 @import './assets/base.css';
+
+html, body {
+  scrollbar-width: none; 
+}
+
+.anti-scroll {
+  scrollbar-width: none; 
+}
 </style>

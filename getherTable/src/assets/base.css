@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: local("Quicksand Regular"),
+    src: local("Quicksand-Regular"),
     local("Quicksand-Regular"),
     url("./fonts/Quicksand-Regular.woff2") format("woff2"),
     url("./fonts/Quicksand-Regular.woff") format("woff");
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: local("Quicksand Bold"),
+    src: local("Quicksand-Bold"),
     local("Quicksand-Bold"),
     url("./fonts/Quicksand-Bold.woff2") format("woff2"),
     url("./fonts/Quicksand-Bold.woff") format("woff");
@@ -27,7 +27,7 @@
 
 @font-face {
     font-family: "Caveat";
-    src: local("Caveat Bold"),
+    src: local("Caveat-Bold"),
     local("Caveat-Bold"),
     url("./fonts/Caveat-Bold.woff2") format("woff2"),
     url("./fonts/Caveat-Bold.woff") format("woff");
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: "Caveat";
-    src: local("Caveat Regular"),
+    src: local("Caveat-Regular"),
     local("Caveat-Regular"),
     url("./fonts/Caveat-Regular.woff2") format("woff2"),
     url("./fonts/Caveat-Regular.woff") format("woff");

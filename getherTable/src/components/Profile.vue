@@ -3,7 +3,7 @@
     <section>
         <div class="paper">
             <div class="cards">
-                <div class="card">
+                <div class="card" v-for="item in cardsItems" :key="item.id">
                     <div class="card-column">
                         <img :src="Logo" alt="">
                         <div class="reviews">
@@ -65,9 +65,46 @@
 
                     </div>
                     <div class="card-column">
-                        <h1>Игрок</h1>
-                        <div>
-                            <svg></svg>
+                        <div class="title">
+                            <h1>{{ item.name }}</h1>
+                            <a href=""><svg width="63" height="100" viewBox="0 0 63 100" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.92237 98.4819C3.30975 94.6082 6.23917 85.959 7.6776 80.7845M7.6776 80.7845C5.22424 68.4746 1.32104 68.8557 0.890625 59.817C4.75542 65.9609 5.23834 67.2012 7.81069 68.576C3.16941 60.033 7.0451 46.9793 8.46147 42.0974C9.65094 46.9367 11.6896 49.3283 11.6896 49.3283C11.2056 29.5562 20.6696 20.6953 20.6696 20.6953C20.2548 25.5692 20.642 27.8937 20.642 27.8937C31.8611 -2.5972 59.9797 0.875378 59.9797 0.875378C43.5951 11.6602 60.7857 32.8526 30.851 43.7757C37.4104 44.9818 43.5727 39.9713 43.5727 39.9713C41.1185 49.4426 33.1671 53.9337 33.1671 53.9337C33.3399 56.0077 28.7768 58.5392 28.7768 58.5392C31.7663 58.5687 36.5673 54.6224 36.5673 54.6224C32.5822 66.7952 16.8215 69.2175 14.358 73.1302C18.8503 71.7535 22.8951 71.5692 25.7209 71.2793C21.301 74.9022 13.1106 74.8025 7.6776 80.7845Z"
+                                        stroke="#833138" stroke-width="1.51181" stroke-linecap="round" />
+                                    <path
+                                        d="M7.21094 78.6256C29.242 14.4793 49.9622 5.87092 51.7042 5.94777C51.7042 5.94777 28.6121 20.9152 8.73289 79.733"
+                                        stroke="#833138" stroke-width="0.755906" stroke-linecap="round" />
+                                    <path d="M51.495 16.084C48.5243 19.0185 40.2734 22.4971 40.2734 22.4971"
+                                        stroke="#833138" stroke-width="0.188976" stroke-linecap="round"
+                                        stroke-linejoin="bevel" />
+                                    <path d="M51.1526 18.2549C42.0328 24.0957 36.5312 25.0072 36.5312 25.0072"
+                                        stroke="#833138" stroke-width="0.188976" stroke-linecap="round" />
+                                    <path d="M49.8737 25.1631C39.0632 33.0533 31.7734 33.2046 31.7734 33.2046"
+                                        stroke="#833138" stroke-width="0.264567" stroke-linecap="round" />
+                                    <path d="M49.262 27.251C39.7836 34.3726 33.1562 34.64 33.1562 34.64"
+                                        stroke="#833138" stroke-width="0.264567" stroke-linecap="round" />
+                                    <path d="M35.7034 7.4248C31.9633 18.3891 32.3325 17.7836 32.2812 21.1652"
+                                        stroke="#833138" stroke-width="0.226772" stroke-linecap="round" />
+                                    <path d="M34.2853 8.45898C30.3914 18.1936 30.8964 23.4709 30.8964 23.4709"
+                                        stroke="#833138" stroke-width="0.226772" stroke-linecap="round" />
+                                    <path d="M20.6429 27.8936C19.9256 34.0418 22.1348 34.1785 22.2885 38.6871"
+                                        stroke="#833138" stroke-width="0.434646" stroke-linecap="round" />
+                                    <path d="M20.6729 20.6953C15.8055 32.172 21.1637 35.0496 20.7538 42.325"
+                                        stroke="#833138" stroke-width="0.377953" stroke-linecap="round" />
+                                    <path d="M8.46136 42.0977C8.41013 51.6786 13.014 50.9328 13.1164 59.6939"
+                                        stroke="#833138" stroke-width="0.377953" stroke-linecap="round" />
+                                    <path d="M11.6953 49.3281C12.1052 51.8386 14.6593 53.4428 14.5569 55.441"
+                                        stroke="#833138" stroke-width="0.491339" stroke-linecap="round" />
+                                    <path d="M37.3659 43.2334C26.709 48.1007 27.3631 45.1429 22.0859 49.8566"
+                                        stroke="#833138" stroke-width="0.340158" stroke-linecap="round" />
+                                    <path d="M33.1741 53.9341C33.584 51.8334 27.6743 57.747 19.0156 58.823"
+                                        stroke="#833138" stroke-width="0.434646" stroke-linecap="round" />
+                                    <path d="M28.7779 58.5391C19.5556 60.1273 19.2146 61.4868 16.6016 63.1263"
+                                        stroke="#833138" stroke-width="0.491339" stroke-linecap="round" />
+                                </svg></a>
+
+
                         </div>
                         <div class="info">
                             <div class="info-column">
@@ -116,6 +153,11 @@ const reviwsItems = ref([
     { id: '10', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
     { id: '11', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
 ])
+
+const cardsItems = [
+    { id: '1', name: 'Игрок' },
+    { id: '2', name: 'Мастер' }
+]
 
 const isCreating = ref(false)
 
@@ -181,6 +223,7 @@ section {
     justify-content: center;
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-width: none; 
 }
 
 .paper {
@@ -206,14 +249,17 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 125px;
 }
 
 .card {
     display: flex;
     width: 1300px;
+    flex-shrink: 0;
+    min-height: 701px;
 }
 
-.card-column {
+.card-column:first-child {
     position: relative;
     width: 242px;
     height: 663px;
@@ -230,12 +276,13 @@ section {
 }
 
 .reviews {
-    margin-top: 53px;
+    margin-top: 48px;
     gap: 7px;
     height: 321px;
     width: 242px;
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-width: none; 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -415,5 +462,68 @@ section {
 .save-btn:hover,
 .cancel-btn:hover {
     opacity: 0.8;
+}
+
+.card-column:last-child {
+    margin-left: 91px;
+}
+
+.title {
+    display: flex;
+    margin-left: 232px;
+    width: 670px;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Caveat';
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.title a {
+    margin-top: 22px;
+}
+
+.title svg {
+    color: var(--base-red);
+    transition: color 0.3s ease;
+}
+
+.title svg:hover {
+    color: var(--base-blue);
+}
+
+.info {
+    margin-top: 70px;
+    display: flex;
+    gap: 23px;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-column div {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quicksand';
+    font-size: 28px;
+}
+
+.info-column div span {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.info-column:first-child div {
+    width: 448px;
+}
+
+.info-column:last-child div {
+    width: 361px;
 }
 </style>
