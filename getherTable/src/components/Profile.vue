@@ -5,7 +5,7 @@
             <div class="cards">
                 <div class="card" v-for="item in cardsItems" :key="item.id">
                     <div class="card-column">
-                        <img :src="Logo" alt="">
+                        <img :src="item.src" alt="">
                         <div class="reviews">
 
                             <div v-for="item in reviwsItems" :key="item.id" class="review">
@@ -327,7 +327,7 @@ section {
 }
 
 .review-column:nth-child(2) span {
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 13px;
     color: var(--main-color);
@@ -355,7 +355,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 24px;
     color: var(--base-red);
@@ -440,7 +440,7 @@ section {
 .save-btn,
 .cancel-btn {
     padding: 4px 12px;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 12px;
     border: none;
@@ -509,12 +509,12 @@ h1 {
 .info-column div {
     display: flex;
     justify-content: space-between;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-size: 28px;
 }
 
 .info-column div span {
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 28px;
 }

@@ -175,7 +175,7 @@ input:focus {
 .upload-text {
     display: block;
     text-align: center;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-size: 28px;
     color: var(--base-red);
     cursor: pointer;
@@ -218,7 +218,7 @@ input:focus {
 }
 
 .column label {
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 28px;
     color: var(--main-color);
@@ -226,7 +226,7 @@ input:focus {
 
 .column input {
     height: 4vh;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-size: 27px;
     color: var(--main-color);
     text-align: center;
@@ -311,7 +311,7 @@ textarea {
 }
 
 .description-group label {
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-weight: bold;
     font-size: 28px;
     color: var(--main-color);
@@ -320,7 +320,7 @@ textarea {
 textarea {
     width: 29.7vw;
     height: 55.52vh;
-    font-family: 'Quicksand';
+    font-family: 'VestiSans';
     font-size: 28px;
     color: var(--main-color);
     line-height: 150%;

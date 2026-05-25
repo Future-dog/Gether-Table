@@ -261,18 +261,18 @@ a {
 }
 
 .signatire {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 18px;
     font-weight: bold;
 }
 
 .info {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 18px;
 }
 
 .grid-item p {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 17px;
     text-align: justify;
 }
@@ -283,7 +283,7 @@ a {
 }
 
 .filter-name {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 40px;
     padding-left: 30px;
 }
@@ -306,7 +306,7 @@ a {
 /* 44 */
 
 .class-filter {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 18px;
     font-weight: bold;
     max-width: 222px;
@@ -316,14 +316,14 @@ a {
 }
 
 .item-filter {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 18px;
     padding-left: 33px;
     padding-bottom: 3px;
 }
 
 .class-filter1 {
-    font-family: Quicksand;
+    font-family: VestiSans;
     font-size: 18px;
     font-weight: bold;
     max-width: 222px;

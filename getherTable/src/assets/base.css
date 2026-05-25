@@ -5,6 +5,7 @@
     --base-red: #833138;
     --paper-color: #DBDBD9;
     --base-blue: #188A8A;
+    --base-green: #006F00;
 }
 
 @font-face {
@@ -50,6 +51,20 @@
     url("./fonts/DisruptorsScript-Regular.woff2") format("woff2"),
     url("./fonts/DisruptorsScript-Regular.woff") format("woff");
     font-weight: normal;
+}
+
+@font-face {
+    font-family: "VestiSans";
+    src: local("VestiSans-Regular"),
+    local("VestiSans Regular");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "VestiSans";
+    src: local("VestiSans-Bold"),
+    local("VestiSans Bold");
+    font-weight: Bold;
 }
 
 ul li{
