@@ -1,7 +1,7 @@
 <template>
     <header :style="{ backgroundImage: `url(${bg_header})` }">
-        <img :src="logo_gether" alt="Logo" class="logo">
-        <img :src="name_gether" alt="name Gether Table" class="name-gether">
+        <a href="/"><img :src="logo_gether" alt="Logo" class="logo"></a>
+        <a href="/"><img :src="name_gether" alt="name Gether Table" class="name-gether"></a>
         <!-- <img src="./image/Name_GETHERTABLE.png" alt="Gether Table" onclick="hello()"> -->
         <div class="useless"></div>
     </header>

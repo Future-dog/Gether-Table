@@ -5,69 +5,21 @@
             <div class="cards">
                 <div class="card" v-for="item in cardsItems" :key="item.id">
                     <div class="card-column">
-                        <img :src="Logo" alt="">
+                        <div class="upload-wrapper">
+                            <label for="image-upload" class="upload-label">
+                                <input type="file" id="image-upload" accept="image/*" @change="previewImage">
+                                <div class="upload-frame" id="upload-frame"></div>
+                                <span class="upload-text">Выбрать</span>
+                            </label>
+                        </div>
                         <div class="reviews">
-
-                            <div v-for="item in reviwsItems" :key="item.id" class="review">
-                                <div class="review-column">
-                                    <a :href="item.link"><img :src="item.src" alt="avatar"></a>
-                                </div>
-                                <div class="review-column">
-                                    <span>Социалка</span>
-                                    <span>Бой</span>
-                                </div>
-                                <div class="review-column">
-                                    <div><img v-for="n in item.meaning_soc" :key="n" class="Logo-icon" :src="Logo_Red"
-                                            alt="Logo icon"></div>
-                                    <div><img v-for="n in item.meaning_fig" :key="n" class="Logo-icon" :src="Logo_Red"
-                                            alt="Logo icon"></div>
-                                </div>
-                            </div>
+                            
                         </div>
-
-                        <!-- Кнопка или форма создания -->
-                        <div v-if="!isCreating" class="create-review" @click="showCreateForm">
-                            Оставить отзыв
-                        </div>
-
-                        <!-- Форма создания нового отзыва (копия структуры review) -->
-                        <div v-else style="margin-top: 7px;">
-                            <div class="review">
-                                <div class="review-column">
-                                    <img :src="Logo" alt="avatar">
-                                </div>
-                                <div class="review-column">
-                                    <span>Социалка</span>
-                                    <span>Бой</span>
-                                </div>
-                                <div class="review-column">
-                                    <div class="rating-group">
-                                        <div class="rating-star">
-                                            <img v-for="n in 3" :key="n" @click="setSocRating(n)"
-                                                :src="n <= newReview.meaning_soc ? Logo_Red : Logo_Red_Gray"
-                                                class="Logo-icon clickable" alt="rating">
-                                        </div>
-                                    </div>
-                                    <div class="rating-group">
-                                        <div class="rating-star">
-                                            <img v-for="n in 3" :key="n" @click="setFigRating(n)"
-                                                :src="n <= newReview.meaning_fig ? Logo_Red : Logo_Red_Gray"
-                                                class="Logo-icon clickable" alt="rating">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-actions">
-                                <button @click="saveReview" class="save-btn">Сохранить</button>
-                                <button @click="cancelCreate" class="cancel-btn">Отмена</button>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="card-column">
                         <div class="title">
                             <h1>{{ item.name }}</h1>
-                            <a href="/editProfile"><svg width="63" height="100" viewBox="0 0 63 100" fill="none"
+                            <a href="/profile"><svg width="63" height="100" viewBox="0 0 63 100" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2.92237 98.4819C3.30975 94.6082 6.23917 85.959 7.6776 80.7845M7.6776 80.7845C5.22424 68.4746 1.32104 68.8557 0.890625 59.817C4.75542 65.9609 5.23834 67.2012 7.81069 68.576C3.16941 60.033 7.0451 46.9793 8.46147 42.0974C9.65094 46.9367 11.6896 49.3283 11.6896 49.3283C11.2056 29.5562 20.6696 20.6953 20.6696 20.6953C20.2548 25.5692 20.642 27.8937 20.642 27.8937C31.8611 -2.5972 59.9797 0.875378 59.9797 0.875378C43.5951 11.6602 60.7857 32.8526 30.851 43.7757C37.4104 44.9818 43.5727 39.9713 43.5727 39.9713C41.1185 49.4426 33.1671 53.9337 33.1671 53.9337C33.3399 56.0077 28.7768 58.5392 28.7768 58.5392C31.7663 58.5687 36.5673 54.6224 36.5673 54.6224C32.5822 66.7952 16.8215 69.2175 14.358 73.1302C18.8503 71.7535 22.8951 71.5692 25.7209 71.2793C21.301 74.9022 13.1106 74.8025 7.6776 80.7845Z"
@@ -108,22 +60,22 @@
                         </div>
                         <div class="info">
                             <div class="info-column">
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Сколько в D&D</span>2 года</div>
-                                <div><span>Любимый жанр</span>Хоррор</div>
-                                <div><span>Кол-во игр сыграно</span>20</div>
-                                <div><span>Играет с хб</span>нет</div>
-                                <div><span>Играет с хб</span>нет</div>
-                                <div><span>Играет с хб</span>нет</div>
+                                <div><span>Имя</span><input id="name" value="Лягух"></input></div>
+                                <div><span>Сколько в D&D</span><input id="year" value="2 года"></input></div>
+                                <div><span>Любимый жанр</span><input id="jenre" value="Хоррор"></input></div>
+                                <div><span>Кол-во игр сыграно</span><input id="count" value="20"></input></div>
+                                <div><span>Играет с хб</span><input id="hb" value="нет"></input></div>
+                                <div><span>Играет с хб</span><input id="hb" value="нет"></input></div>
+                                <div><span>Играет с хб</span> <input id="hb" value="нет"></input></div>
                             </div>
                             <div class="info-column">
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
-                                <div><span>Имя</span>Лягух</div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
+                                <div><span>Имя</span><input id="namev2" value="Лягух"></input></div>
                             </div>
                         </div>
                     </div>
@@ -140,18 +92,36 @@ import Logo from './../assets/Logo.png'
 import Logo_Red from './../assets/FrogRed.svg'
 import Logo_Red_Gray from './../assets/FrogRed.svg' // или создайте копию с другим цветом
 import { ref } from 'vue'
+
+function previewImage(event) {
+    const file = event.target.files[0];
+    const frame = document.getElementById('upload-frame');
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            frame.style.backgroundImage = `url(${e.target.result})`;
+            frame.style.backgroundSize = 'cover';
+            frame.style.backgroundPosition = 'center';
+            // Убираем штриховую рамку, показываем картинку
+            frame.style.backgroundImage = `url(${e.target.result})`;
+        }
+        reader.readAsDataURL(file);
+    }
+}
+
 const reviwsItems = ref([
-    { id: '1', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 3 },
-    { id: '2', link: '/profile', src: Logo, meaning_soc: 2, meaning_fig: 3 },
-    { id: '3', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 1 },
-    { id: '4', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '5', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '6', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '7', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '8', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '9', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '10', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
-    { id: '11', link: '/profile', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '1', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 3 },
+    { id: '2', link: '#', src: Logo, meaning_soc: 2, meaning_fig: 3 },
+    { id: '3', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 1 },
+    { id: '4', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '5', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '6', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '7', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '8', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '9', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '10', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
+    { id: '11', link: '#', src: Logo, meaning_soc: 3, meaning_fig: 2 },
 ])
 
 const cardsItems = [
@@ -223,7 +193,7 @@ section {
     justify-content: center;
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 .paper {
@@ -242,7 +212,7 @@ section {
     margin-top: 155px;
     width: 67.75vw;
     height: 166.82vh;
-    background: url('@/assets/Bg-form-profile.png');
+    background: url('@/assets/Bg-form-editProfile.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -270,199 +240,54 @@ section {
     margin-top: 38px;
 }
 
-.card-column img {
+/* ============================ */
+
+.upload-wrapper {
     width: 200px;
     height: 200px;
-}
-
-.reviews {
-    margin-top: 48px;
-    gap: 7px;
-    height: 321px;
-    width: 242px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.review {
-    width: 228px;
-    height: 75px !important;
-    background-image: url('@/assets/Bg-form-review-profile.png');
+    background-image: url('@/assets/Bg-form-editProfile-avatar.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
 }
 
-.review-column {
-    display: flex;
-    flex-direction: column;
+.upload-label input {
+    display: none;
 }
 
-.review-column:first-child {
-    width: 59px;
-    height: 59px;
-    margin-left: 8px;
-}
-
-.review-column:first-child a {
+/* Рамка для загрузки */
+.upload-frame {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url('@/assets/Logo.png');
 }
 
-.review-column:first-child a img {
-    width: 100%;
-    height: 100%;
-}
-
-.review-column:nth-child(2) {
-    margin-left: 2px;
-    gap: 13px;
-}
-
-.review-column:nth-child(2) span {
+/* Текст */
+.upload-text {
+    display: block;
+    text-align: center;
     font-family: 'VestiSans';
-    font-weight: bold;
-    font-size: 13px;
-    color: var(--main-color);
-}
-
-.review-column:last-child {
-    margin-left: 11px;
-    gap: 8px;
-}
-
-.review-column:last-child img {
-    width: 22px;
-    height: 23px;
-}
-
-.review-column:last-child div {
-    gap: 4px;
-    display: flex;
-}
-
-.create-review {
-    margin-top: 7px;
-    width: 228px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'VestiSans';
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     color: var(--base-red);
-    transition: color 0.3s ease;
+    cursor: pointer;
+    transform: translateY(-6%);
+    transition: all 0.3s ease;
 }
 
-.create-review:hover {
+.upload-wrapper:hover .upload-text{
     color: var(--base-blue);
 }
 
-.create-review::before {
-    content: '';
-    position: absolute;
-    width: 228px;
-    height: 75px;
-    background-image: url('@/assets/Bg-form-createReview.png');
-    background-size: 100% 100%;
+/* После выбора картинки */
+.upload-frame.has-image {
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: 0;
-    transition: opacity 0.3s ease;
-}
-
-.create-review:hover::before {
-    opacity: 0;
-}
-
-.create-review::after {
-    content: '';
-    position: absolute;
-    width: 228px;
-    height: 75px;
-    background-image: url('@/assets/Bg-form-createReview-hover.png');
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0;
-    z-index: 0;
-    transition: opacity 0.3s ease;
-}
-
-.create-review:hover::after {
-    opacity: 1;
-}
-
-/* new style for createReview */
-
-.rating-group {
-    display: flex;
-    gap: 4px;
-}
-
-.rating-star {
-    display: flex;
-    gap: 4px;
-}
-
-.rating-star img {
-    width: 22px;
-    height: 23px;
-    cursor: pointer;
-    transition: transform 0.1s;
-}
-
-.rating-star img:hover {
-    transform: scale(1.1);
-}
-
-/* Кнопки действий */
-.form-actions {
-    position: absolute;
-    bottom: -35px;
-    left: 0;
-    right: 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    z-index: 10;
-}
-
-.save-btn,
-.cancel-btn {
-    padding: 4px 12px;
-    font-family: 'VestiSans';
-    font-weight: bold;
-    font-size: 12px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.2s;
 }
 
-.save-btn {
-    background: #833138;
-    color: white;
-}
-
-.cancel-btn {
-    background: #666;
-    color: white;
-}
-
-.save-btn:hover,
-.cancel-btn:hover {
-    opacity: 0.8;
-}
+/* ============================== */
 
 .card-column:last-child {
     margin-left: 91px;
@@ -495,7 +320,7 @@ h1 {
 }
 
 .info {
-    margin-top: 70px;
+    margin-top: 52px;
     display: flex;
     gap: 23px;
 }
@@ -503,27 +328,78 @@ h1 {
 .info-column {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 24.5px;
 }
 
-.info-column div {
+input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    width: auto;
+    height: auto;
+
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.info-column input {
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
     font-size: 28px;
+    text-align: center;
 }
 
-.info-column div span {
+.info-column span {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 28px;
 }
 
+.info-column div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .info-column:first-child div {
-    width: 448px;
+    width: 454px;
 }
 
 .info-column:last-child div {
-    width: 361px;
+    width: 354px;
+}
+
+input[id="name"] {
+    width: 382px;
+}
+
+input[id="year"] {
+    width: 224px;
+}
+
+input[id="jenre"] {
+    width: 212px;
+}
+
+input[id="count"] {
+    width: 148px;
+}
+
+input[id="hb"] {
+    width: 63px;
+}
+
+input[id="namev2"] {
+    width: 276px;
 }
 </style>

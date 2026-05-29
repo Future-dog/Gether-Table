@@ -5,7 +5,7 @@
             <div class="response" v-for="item in cardsItems" :key="item.id">
                 <div class="card">
                     <div class="column">
-                        <img :src="item.avatar" alt="">
+                        <a href="/profile"><img :src="item.avatar" alt=""></a>
                         <a :href="item.link">{{ item.game}}</a>
                     </div>
                     <div class="column">
@@ -45,12 +45,12 @@ import Avatar from './../assets/Logo.png'
 import Frog_red from './../assets/FrogRed.svg'
 
 const cardsItems = [
-    { id: '1', avatar: Avatar, link: '#', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
-    { id: '2', avatar: Avatar, link: '#', game: 'Страх подземелий', title: 'Будущее', count: 'год', genre: 'панк', games_count: '7', hb: 'нет', soc: 2, fig: 1 },
-    { id: '3', avatar: Avatar, link: '#', game: 'Какое-то название', title: 'Прошлое', count: 'пол года', genre: 'метал', games_count: '10', hb: 'да', soc: 1, fig: 3 },
-    { id: '4', avatar: Avatar, link: '#', game: 'Уже лень придумывать', title: 'Кажюни', count: '2 года', genre: 'железо', games_count: '23', hb: 'да', soc: 2, fig: 2 },
-    { id: '5', avatar: Avatar, link: '#', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
-    { id: '6', avatar: Avatar, link: '#', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
+    { id: '1', avatar: Avatar, link: '/game', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
+    { id: '2', avatar: Avatar, link: '/game', game: 'Страх подземелий', title: 'Будущее', count: 'год', genre: 'панк', games_count: '7', hb: 'нет', soc: 2, fig: 1 },
+    { id: '3', avatar: Avatar, link: '/game', game: 'Какое-то название', title: 'Прошлое', count: 'пол года', genre: 'метал', games_count: '10', hb: 'да', soc: 1, fig: 3 },
+    { id: '4', avatar: Avatar, link: '/game', game: 'Уже лень придумывать', title: 'Кажюни', count: '2 года', genre: 'железо', games_count: '23', hb: 'да', soc: 2, fig: 2 },
+    { id: '5', avatar: Avatar, link: '/game', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
+    { id: '6', avatar: Avatar, link: '/game', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
 ]
 </script>
 
@@ -114,7 +114,7 @@ section {
     height: 150px;
 }
 
-.column a {
+.column a:last-child {
     margin-top: 26px;
     text-align: center;
     font-family: 'VestiSans';
@@ -123,11 +123,11 @@ section {
     transition: color 0.2s ease;
 }
 
-.column a:hover {
+.column a:last-child:hover {
     color: var(--base-blue);
 }
 
-.column a::before {
+.column a:last-child::before {
     top: 30px;
     position: relative;
     display: block;
@@ -143,11 +143,11 @@ section {
     transition: opacity 0.2s ease;
 }
 
-.column a:hover::before {
+.column a:last-child:hover::before {
     opacity: 0;
 }
 
-.column a::after {
+.column a:last-child::after {
     top: -1px;
     position: relative;
     display: block;
@@ -163,7 +163,7 @@ section {
     transition: opacity 0.2s ease;
 }
 
-.column a:hover::after {
+.column a:last-child:hover::after {
     opacity: 1;
 }
 

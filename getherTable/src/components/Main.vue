@@ -21,19 +21,19 @@
             </div>
             <div class="dark-smoke"></div>
             <div class="main-heroes">
-                <a href="/games.html" class="soldier-button">
+                <a href="/games" class="soldier-button">
                     <img :src="soldier" alt="" class="main_game-image">
                 </a>
-                <a href="/games.html" class="leshi-button">
+                <a href="/games" class="leshi-button">
                     <img :src="leshi" alt="" class="main_game-image">
                 </a>
-                <a href="#" class="profile-button">
+                <a href="/profile" class="profile-button">
                     <img :src="profile" alt="" class="main_game-image">
                 </a>
-                <a href="#" class="dice-button">
+                <a href="/setting" class="dice-button">
                     <img :src="dice" alt="" class="main_game-image">
                 </a>
-                <a href="#" class="responses-button">
+                <a href="/responses" class="responses-button">
                     <img :src="responses" alt="" class="main_game-image">
                 </a>
             </div>

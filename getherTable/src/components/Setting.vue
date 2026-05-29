@@ -2,7 +2,7 @@
     <Base />
     <section>
         <div class="paper">
-            <div class="button">Сменить тему</div>
+            <div @click="themeStore.toggleTheme" class="button">Сменить тему</div>
         </div>
     </section>
 </template>
@@ -11,6 +11,9 @@
 
 <script setup>
 import Base from './Base.vue'
+import { useThemeStore } from '@/stores/theme'
+
+const themeStore = useThemeStore()
 </script>
 
 
@@ -31,7 +34,7 @@ section {
 .paper {
     width: 79vw;
     height: 100vh;
-    background-image: url('@/assets/Bg-paper-setting.png');
+    background-image: var(--Bg-setting);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;

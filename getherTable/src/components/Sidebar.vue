@@ -5,7 +5,7 @@
             <ul class="nav-list">
 
                 <li class="sidebar-item-main">
-                    <a href="index.html" :style="{ '--bg-sidebar-button-main': `url(${bg_sidebar_button_main})` }">
+                    <a href="/" :style="{ '--bg-sidebar-button-main': `url(${bg_sidebar_button_main})` }">
                         <div>
                             <span>Главная</span>
                         </div>
@@ -69,10 +69,10 @@ function ProfileMenuOff() {
 }
 
 const sidebarItems = [
-    { id: 'games', title: 'Игры', link: '#', icon: gamesIcon },
-    { id: 'players', title: 'Игроки', link: '#', icon: playersIcon },
-    { id: 'profile', title: 'Профиль', link: '#', icon: profileIcon, func: ProfileMenuOn },
-    { id: 'About', title: 'О нас', link: '#', icon: aboutIcon },
+    { id: 'games', title: 'Игры', link: '/games', icon: playersIcon },
+    { id: 'responses', title: 'Создание', link: '/createGame', icon: gamesIcon },
+    { id: 'profile', title: 'Профиль', link: '/profile', icon: profileIcon },
+    { id: 'responses', title: 'Отклики', link: '/responses', icon: aboutIcon },
 ]
 </script>
 

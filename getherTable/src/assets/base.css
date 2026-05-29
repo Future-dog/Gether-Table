@@ -1,4 +1,5 @@
-:root{
+:root,
+[data-theme="light"]{
     --main-color:#292929;
     --red-color:#920106;
     --figure_seal-color:#780000;
@@ -6,6 +7,20 @@
     --paper-color: #DBDBD9;
     --base-blue: #188A8A;
     --base-green: #006F00;
+
+    --Bg-setting: url('@/assets/Bg-paper-setting.png');
+}
+
+[data-theme="dark"] {
+    --main-color:#DBDBD9;
+    --red-color:#920106;
+    --figure_seal-color:#780000;
+    --base-red: #833138;
+    --base-black: #292929;
+    --base-blue: #188A8A;
+    --base-green: #006F00;
+
+    --Bg-setting: url('@/assets/Bg-leather-setting.png');
 }
 
 @font-face {
