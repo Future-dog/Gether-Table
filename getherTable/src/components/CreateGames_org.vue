@@ -90,7 +90,7 @@ section {
 .paper {
     width: 80vw;
     height: 75vw;
-    min-height: 49.740vw;   /* 100vh → 49.740vw */
+    min-height: 100vh;
     aspect-ratio: 1536 / 1450;
     background-image: url('@/assets/Bg-paper-createGames.png');
     background-size: 100% 100%;
@@ -105,7 +105,7 @@ form {
     margin-top: 140px;
     width: 61.5vw;
     height: 65vw;
-    min-height: 49.740vw;   /* 100vh → 49.740vw */
+    min-height: 100vh;
     background: url('@/assets/Bg-form-createGames.png');
     background-size: 100% 100%;
     background-position: center;
@@ -152,13 +152,13 @@ input:focus {
 .first-group {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2.238vw;   /* 4.5vh → 2.238vw */
+    margin-top: 4.5vh;
     gap: 6.5vw;
 }
 
 .upload-wrapper {
     width: 14.17vw;
-    height: 21.439vw;      /* 43.1vh → 21.439vw */
+    height: 43.1vh;
 }
 
 /* Скрываем стандартный input */
@@ -179,7 +179,7 @@ input:focus {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 1.75rem;    /* 28px → 1.75rem */
+    font-size: 28px;
     color: var(--base-red);
     cursor: pointer;
     transform: translateY(-86%);
@@ -195,7 +195,7 @@ input:focus {
 /* ------------ Основные данные --------- */
 
 .columns {
-    margin-top: 0.746vw;   /* 1.5vh → 0.746vw */
+    margin-top: 1.5vh;
     display: flex;
     gap: 1.2vw;
     margin-right: 1vw;
@@ -204,13 +204,12 @@ input:focus {
 .column {
     display: flex;
     flex-direction: column;
-    gap: 1.303vw;          /* 2.62vh → 1.303vw */
+    gap: 2.62vh;
 }
 
 .column div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .column:first-child {
@@ -224,60 +223,71 @@ input:focus {
 .column label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 1.75rem;    /* 28px → 1.75rem */
+    font-size: 28px;
     color: var(--main-color);
 }
 
 .column input {
-    height: 1.990vw;       /* 4vh → 1.990vw */
+    height: 4vh;
     font-family: 'VestiSans';
-    font-size: 1.6875rem;  /* 27px → 1.6875rem */
+    font-size: 27px;
     color: var(--main-color);
     text-align: center;
 }
 
 input[id="date"] {
     width: 6.5vw;
+    margin-left: 9.6vw;
 }
 
 input[id="duration"] {
     width: 7.3vw;
+    margin-left: 1.79vw;
 }
 
 input[id="genre"] {
     width: 9.5vw;
+    margin-left: 5.79vw;
 }
 
 input[id="quantity"] {
     width: 1.6vw;
+    margin-left: 6.01vw;
 }
 
 input[id="restrictions"] {
     width: 3.9vw;
+    margin-left: 5.65vw;
 }
 
 input[id="hb"] {
     width: 3.9vw;
+    margin-left: 13.65vw;
 }
 
 input[id="quantity1"] {
     width: 2.45vw;
+    margin-left: 1.17vw;
 }
 
 input[id="test"] {
     width: 4vw;
+    margin-left: 1.65vw;
 }
 
 input[id="subgenre"] {
     width: 9.5vw;
+    margin-left: 1.75vw;
 }
 
 input[id="collected"] {
     width: 1.6vw;
+    margin-left: 9.99vw;
 }
 
 input[id="level"] {
     width: 2.5vw;
+    margin-left: 9.3vw;
 }
 
 textarea {
@@ -293,7 +303,7 @@ textarea {
 }
 
 .second-group {
-    margin-top: 7.958vw;   /* 16vh → 7.958vw */
+    margin-top: 16vh;
     gap: 1.3vw;
     display: flex;
 }
@@ -306,18 +316,16 @@ textarea {
 .description-group label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 1.75rem;    /* 28px → 1.75rem */
+    font-size: 28px;
     color: var(--main-color);
 }
 
 textarea {
     width: 29.7vw;
-    height: 27.621vw;      /* 55.52vh → 27.621vw */
+    height: 55.52vh;
     font-family: 'VestiSans';
-    font-size: 1.75rem;    /* 28px → 1.75rem */
+    font-size: 28px;
     color: var(--main-color);
     line-height: 150%;
 }
-
-/* Базовый размер для ширины 1920px и выше */
 </style>

@@ -23,6 +23,52 @@
     --Bg-setting: url('@/assets/Bg-leather-setting.png');
 }
 
+html {
+    font-size: 16px;
+}
+
+/* Очень широкие экраны (4K и более) */
+@media (min-width: 2560px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+/* Ширина 1600–1919px */
+@media (max-width: 1919px) and (min-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/* Ширина 1366–1599px (популярные ноутбуки) */
+@media (max-width: 1599px) and (min-width: 1366px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Ширина 1024–1365px (планшеты в альбомной ориентации) */
+@media (max-width: 1365px) and (min-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/* Ширина 768–1023px (планшеты вертикально, маленькие ноутбуки) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/* Мобильные устройства (до 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 8px;
+    }
+}
+
 @font-face {
     font-family: "Quicksand";
     src: local("Quicksand-Regular"),
