@@ -50,7 +50,6 @@ const cardsItems = [
     { id: '3', avatar: Avatar, link: '/game', game: 'Какое-то название', title: 'Прошлое', count: 'пол года', genre: 'метал', games_count: '10', hb: 'да', soc: 1, fig: 3 },
     { id: '4', avatar: Avatar, link: '/game', game: 'Уже лень придумывать', title: 'Кажюни', count: '2 года', genre: 'железо', games_count: '23', hb: 'да', soc: 2, fig: 2 },
     { id: '5', avatar: Avatar, link: '/game', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
-    { id: '6', avatar: Avatar, link: '/game', game: 'След кульминации', title: 'Лягух', count: '2 года', genre: 'хоррор', games_count: '3', hb: 'да', soc: 3, fig: 3 },
 ]
 </script>
 
@@ -71,7 +70,8 @@ section {
 
 .paper {
     width: 79vw;
-    height: 199.17vh;
+    height: 99.074vw;          /* 199.17vh → 99.074vw */
+    min-height: 100vh;
     background-image: url('@/assets/Bg-paper-responses.png');
     background-size: 100% 100%;
     background-position: center;
@@ -79,12 +79,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 2.604vw;              /* 50px → 2.604vw */
 }
 
 .response {
-    width: 1025px;
-    height: 280px;
+    width: 53.385vw;           /* 1025px → 53.385vw */
+    height: 14.583vw;          /* 280px → 14.583vw */
     background-image: url('@/assets/Bg-form-response.png');
     background-size: 100% 100%;
     background-position: center;
@@ -97,28 +97,28 @@ section {
 }
 
 .response:first-child {
-    margin-top: 182px;
+    margin-top: 9.479vw;       /* 182px → 9.479vw */
 }
 
 .column:first-child {
-    width: 181px;
+    width: 9.427vw;            /* 181px → 9.427vw */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 19px;
-    margin-top: 35px;
+    margin-left: 0.990vw;      /* 19px → 0.990vw */
+    margin-top: 1.823vw;       /* 35px → 1.823vw */
 }
 
 .column img {
-    width: 150px;
-    height: 150px;
+    width: 7.813vw;            /* 150px → 7.813vw */
+    height: 7.813vw;
 }
 
 .column a:last-child {
-    margin-top: 26px;
+    margin-top: 1.354vw;       /* 26px → 1.354vw */
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--red-color);
     transition: color 0.2s ease;
 }
@@ -128,12 +128,12 @@ section {
 }
 
 .column a:last-child::before {
-    top: 30px;
+    top: 1.563vw;              /* 30px → 1.563vw */
     position: relative;
     display: block;
     content: '';
-    width: 180px;
-    height: 4px;
+    width: 9.375vw;            /* 180px → 9.375vw */
+    height: 0.208vw;           /* 4px → 0.208vw */
     background-image: url('@/assets/Bg-line-game.png');
     background-size: 100% 100%;
     background-position: center;
@@ -148,12 +148,12 @@ section {
 }
 
 .column a:last-child::after {
-    top: -1px;
+    top: -0.052vw;             /* -1px → -0.052vw */
     position: relative;
     display: block;
     content: '';
-    width: 180px;
-    height: 4px;
+    width: 9.375vw;
+    height: 0.208vw;
     background-image: url('@/assets/Bg-line-game-blue.png');
     background-size: 100% 100%;
     background-position: center;
@@ -171,34 +171,34 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3px;
-    margin-left: 36px;
+    margin-top: 0.156vw;       /* 3px → 0.156vw */
+    margin-left: 1.875vw;      /* 36px → 1.875vw */
 }
 
 .column h2 {
     font-family: 'Caveat';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;         /* 24px → 1.5rem */
     color: var(--main-color);
 }
 
 .info {
-    margin-top: 5px;
+    margin-top: 0.260vw;       /* 5px → 0.260vw */
     display: flex;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 1.458vw;              /* 28px → 1.458vw */
 }
 
 .text div {
-    width: 250px;
+    width: 13.021vw;           /* 250px → 13.021vw */
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .text div span {
@@ -206,18 +206,18 @@ section {
 }
 
 .dop-text {
-    margin-left: 28px;
-    margin-top: 28px;
+    margin-left: 1.458vw;      /* 28px → 1.458vw */
+    margin-top: 1.458vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px;
-    width: 226px;
+    gap: 1.458vw;
+    width: 11.771vw;           /* 226px → 11.771vw */
 }
 
 .dop-text span {
     font-family: 'VestiSans';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
@@ -226,43 +226,43 @@ section {
 }
 
 .title-text span:last-child {
-    margin-left: 69px;
+    margin-left: 3.594vw;      /* 69px → 3.594vw */
 }
 
 .rating {
     display: flex;
     justify-content: space-between;
-    width: 208px;
+    width: 10.833vw;           /* 208px → 10.833vw */
 }
 
 .rating div {
-    width: 74px;
+    width: 3.854vw;            /* 74px → 3.854vw */
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 0.208vw;              /* 4px → 0.208vw */
 }
 
 .rating img {
-    width: 22px;
-    height: 23px;
+    width: 1.146vw;
+    height: 1.198vw;
 }
 
 .answer {
     display: flex;
     flex-direction: column;
-    margin-left: 58px;
-    margin-top: 32px;
-    gap: 32px;
+    margin-left: 3.021vw;      /* 58px → 3.021vw */
+    margin-top: 1.667vw;       /* 32px → 1.667vw */
+    gap: 1.667vw;              /* 32px → 1.667vw */
 }
 
 .answer div {
-    width: 152px;
-    height: 92px;
+    width: 7.917vw;            /* 152px → 7.917vw */
+    height: 4.792vw;           /* 92px → 4.792vw */
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'VestiSans';
-    font-size: 24px;
+    font-size: 1.5rem;         /* 24px → 1.5rem */
     font-weight: bold;
     transition: color 0.2s ease;
 }
@@ -282,8 +282,8 @@ section {
 .answer div:first-child::before {
     content: '';
     position: absolute;
-    width: 152px;
-    height: 92px;
+    width: 7.917vw;
+    height: 4.792vw;
     background-image: url('@/assets/Bg-form-answer-green.png');
     background-size: 100% 100%;
     background-position: center;
@@ -296,8 +296,8 @@ section {
 .answer div:last-child::before {
     content: '';
     position: absolute;
-    width: 152px;
-    height: 92px;
+    width: 7.917vw;
+    height: 4.792vw;
     background-image: url('@/assets/Bg-form-answer-red.png');
     background-size: 100% 100%;
     background-position: center;
@@ -314,8 +314,8 @@ section {
 .answer div::after {
     content: '';
     position: absolute;
-    width: 152px;
-    height: 92px;
+    width: 7.917vw;
+    height: 4.792vw;
     background-image: url('@/assets/Bg-form-answer-blue.png');
     background-size: 100% 100%;
     background-position: center;

@@ -27,14 +27,14 @@
                                         <img :src="item.src" alt="">
                                     </div>
                                     <div class="grid-cardtext">
-                                        <div class="grid-item"><span class="signatire">Дата</span> <span
-                                                class="info">{{ item.date }}</span></div>
-                                        <div class="grid-item"><span class="signatire">Жанр</span> <span
-                                                class="info">{{ item.genre }}</span></div>
+                                        <div class="grid-item"><span class="signatire">Дата</span> <span class="info">{{
+                                            item.date }}</span></div>
+                                        <div class="grid-item"><span class="signatire">Жанр</span> <span class="info">{{
+                                            item.genre }}</span></div>
                                         <div class="grid-item"><span class="signatire">Кол-во игроков</span> <span
                                                 class="info">{{ item.quantity }}</span></div>
-                                        <div class="grid-item"><span class="signatire">ХБ</span> <span
-                                                class="info">{{ item.hb }}</span></div>
+                                        <div class="grid-item"><span class="signatire">ХБ</span> <span class="info">{{
+                                            item.hb }}</span></div>
                                         <div class="grid-item"><span class="signatire">Синопсис</span></div>
                                         <div class="grid-item">
                                             <p>
@@ -120,11 +120,11 @@ import src2 from './../assets//f71c2ac36677e50e37df03080c0de5b0 1.jpg'
 
 
 const cardsItems = [
-    { id: '1', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text:'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.'},
-    { id: '2', link: '/game', title: 'Страх подземелий', src: src2, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text:'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.'},
-    { id: '3', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'серьезно', quantity: '4', hb: 'нет', text:'Ужас, страх, боль, печаль - это все ждет всех, кто сунеться в замок вапира. Но такие мелочи не заботят нюх на ноживу. Лорд ждет вас в своих покоях.'},
-    { id: '4', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text:'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.'},
-    { id: '5', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text:'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.'},
+    { id: '1', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text: 'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.' },
+    { id: '2', link: '/game', title: 'Страх подземелий', src: src2, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text: 'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.' },
+    { id: '3', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'серьезно', quantity: '4', hb: 'нет', text: 'Ужас, страх, боль, печаль - это все ждет всех, кто сунеться в замок вапира. Но такие мелочи не заботят нюх на ноживу. Лорд ждет вас в своих покоях.' },
+    { id: '4', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text: 'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.' },
+    { id: '5', link: '/game', title: 'След кульминации', src: src1, date: '01.01.2001', genre: 'комедия', quantity: '3', hb: 'есть', text: 'Воры магических артефактов. Убийство лорда-мага. Расследование ведёт ваша команда. Ваше трио последняя надежда королевства Нельзя ни кому доверять.' },
 ]
 </script>
 
@@ -159,22 +159,27 @@ const cardsItems = [
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    /* 100vh → 49.740vw */
 }
 
 .rails {
     position: relative;
     overflow-y: auto;
-    width: 848px;
+    width: 44.167vw;
+    /* 848px → 44.167vw */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 79px;
-    margin-left: 351px;
+    margin-top: 4.115vw;
+    /* 79px → 4.115vw */
+    margin-left: 18.281vw;
+    /* 351px → 18.281vw */
 }
 
 .rails h2 {
     font-family: Caveat;
-    font-size: 96px;
+    font-size: 6rem;
+    /* 96px → 6rem */
 }
 
 a {
@@ -187,9 +192,12 @@ a {
 }
 
 .card {
-    width: 803px;
-    height: 284px;
-    margin-top: 16px;
+    width: 41.823vw;
+    /* 803px → 41.823vw */
+    height: 14.792vw;
+    /* 284px → 14.792vw */
+    margin-top: 0.833vw;
+    /* 16px → 0.833vw */
 }
 
 .card:first-child {
@@ -199,15 +207,18 @@ a {
 .background-card {
     position: absolute;
     z-index: -1;
-    max-width: 803px;
+    max-width: 41.823vw;
 }
 
 .card h3 {
     font-family: Caveat;
-    font-size: 20px;
+    font-size: 1.25rem;
+    /* 20px → 1.25rem */
     font-weight: bold;
-    padding-left: 409px;
-    padding-top: 3px;
+    padding-left: 21.302vw;
+    /* 409px → 21.302vw */
+    padding-top: 0.156vw;
+    /* 3px → 0.156vw */
 }
 
 .flexer {
@@ -217,21 +228,29 @@ a {
 .cover-img {
     position: relative;
     z-index: -2;
-    max-width: 140px;
-    top: 3px;
-    left: 36px;
+    max-width: 7.292vw;
+    /* 140px → 7.292vw */
+    top: 0.156vw;
+    left: 1.875vw;
+    /* 36px → 1.875vw */
 }
 
 .grid-cardtext {
-    width: 533px;
-    height: 220px;
+    width: 27.760vw;
+    /* 533px → 27.760vw */
+    height: 11.458vw;
+    /* 220px → 11.458vw */
     position: relative;
-    left: 82px;
-    bottom: 2px;
+    left: 4.271vw;
+    /* 82px → 4.271vw */
+    bottom: 0.104vw;
+    /* 2px → 0.104vw */
     display: grid;
-    grid-template-columns: 195px auto;
+    grid-template-columns: 10.156vw auto;
+    /* 195px → 10.156vw */
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 33px;
+    column-gap: 1.719vw;
+    /* 33px → 1.719vw */
     place-items: center stretch;
 }
 
@@ -262,37 +281,44 @@ a {
 
 .signatire {
     font-family: VestiSans;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
 .info {
     font-family: VestiSans;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .grid-item p {
     font-family: VestiSans;
-    font-size: 17px;
+    font-size: 1.0625rem;
+    /* 17px → 1.0625rem */
     text-align: justify;
 }
 
 .filter {
-    margin-top: 150px;
-    margin-left: 118px;
+    margin-top: 7.813vw;
+    /* 150px → 7.813vw */
+    margin-left: 6.146vw;
+    /* 118px → 6.146vw */
 }
 
 .filter-name {
     font-family: VestiSans;
-    font-size: 40px;
-    padding-left: 30px;
+    font-size: 2.5rem;
+    /* 40px → 2.5rem */
+    padding-left: 1.563vw;
+    /* 30px → 1.563vw */
 }
 
 .background-filter {
-    max-width: 222px;
+    max-width: 11.563vw;
+    /* 222px → 11.563vw */
     position: relative;
     z-index: 1;
-    top: 10px;
+    top: 0.521vw;
+    /* 10px → 0.521vw */
 }
 
 .rails-filter {
@@ -300,40 +326,44 @@ a {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    bottom: 1290px;
+    bottom: 67.188vw;
+    /* 1290px → 67.188vw */
 }
-
-/* 44 */
 
 .class-filter {
     font-family: VestiSans;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    max-width: 222px;
+    max-width: 11.563vw;
     text-align: center;
-    padding-bottom: 3px;
-    padding-top: 5px;
+    padding-bottom: 0.156vw;
+    /* 3px → 0.156vw */
+    padding-top: 0.260vw;
+    /* 5px → 0.260vw */
 }
 
 .item-filter {
     font-family: VestiSans;
-    font-size: 18px;
-    padding-left: 33px;
-    padding-bottom: 3px;
+    font-size: 1.125rem;
+    padding-left: 1.719vw;
+    /* 33px → 1.719vw */
+    padding-bottom: 0.156vw;
 }
 
 .class-filter1 {
     font-family: VestiSans;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    max-width: 222px;
+    max-width: 11.563vw;
     text-align: center;
-    padding-bottom: 3px;
+    padding-bottom: 0.156vw;
 }
 
 .mens {
-    padding-top: 12px;
-    padding-left: 33px;
-    padding-bottom: 16px;
+    padding-top: 0.625vw;
+    /* 12px → 0.625vw */
+    padding-left: 1.719vw;
+    padding-bottom: 0.833vw;
+    /* 16px → 0.833vw */
 }
 </style>

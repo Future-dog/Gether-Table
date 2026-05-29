@@ -98,7 +98,8 @@ section {
 
 .paper {
     width: 80vw;
-    height: 152vh;
+    height: 75.605vw;          /* 152vh → 75.605vw */
+    min-height: 100vh;
     background-image: url('@/assets/Bg-paper-createGames.png');
     background-size: 100% 100%;
     background-position: center;
@@ -109,9 +110,10 @@ section {
 }
 
 form {
-    margin-top: 140px;
+    margin-top: 7.292vw;       /* 140px → 7.292vw */
     width: 61.5vw;
-    height: 132vh;
+    height: 65.657vw;          /* 132vh → 65.657vw */
+    min-height: 100vh;
     background: url('@/assets/Bg-form-createGames.png');
     background-size: 100% 100%;
     background-position: center;
@@ -122,7 +124,6 @@ form {
 }
 
 input {
-    /* Сброс базовых стилей */
     border: none;
     outline: none;
     background: none;
@@ -132,8 +133,6 @@ input {
     color: inherit;
     width: auto;
     height: auto;
-
-    /* Убираем стандартные эффекты */
     box-shadow: none;
     -webkit-appearance: none;
     appearance: none;
@@ -145,11 +144,11 @@ input:focus {
 }
 
 .name {
-    margin-top: 0.5vh;
+    margin-top: 0.249vw;       /* 0.5vh → 0.249vw */
     width: 61vw;
-    height: 8.1vh;
+    height: 4.029vw;           /* 8.1vh → 4.029vw */
     font-family: 'Caveat';
-    font-size: 64px;
+    font-size: 4rem;           /* 64px → 4rem */
     font-weight: bold;
     color: var(--main-color);
     text-align: center;
@@ -158,21 +157,19 @@ input:focus {
 .first-group {
     display: flex;
     justify-content: flex-start;
-    margin-top: 4.5vh;
+    margin-top: 2.238vw;       /* 4.5vh → 2.238vw */
     gap: 6.5vw;
 }
 
 .upload-wrapper {
     width: 14.17vw;
-    height: 43.1vh;
+    height: 21.439vw;          /* 43.1vh → 21.439vw */
 }
 
-/* Скрываем стандартный input */
 .upload-label input {
     display: none;
 }
 
-/* Рамка для загрузки */
 .upload-frame {
     width: 100%;
     height: 100%;
@@ -184,12 +181,11 @@ input:focus {
     background-repeat: no-repeat;
 }
 
-/* Текст */
 .upload-text {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 28px;
+    font-size: 1.75rem;        /* 28px → 1.75rem */
     color: var(--base-red);
     cursor: pointer;
     transform: translateY(-5%);
@@ -200,17 +196,14 @@ input:focus {
     color: var(--base-blue);
 }
 
-/* После выбора картинки */
 .upload-frame.has-image {
     background-size: cover;
     background-position: center;
     border: none;
 }
 
-/* ------------ Основные данные --------- */
-
 .columns {
-    margin-top: 1.5vh;
+    margin-top: 0.746vw;       /* 1.5vh → 0.746vw */
     display: flex;
     gap: 1.2vw;
     margin-right: 1vw;
@@ -219,12 +212,13 @@ input:focus {
 .column {
     display: flex;
     flex-direction: column;
-    gap: 2.62vh;
+    gap: 1.303vw;              /* 2.62vh → 1.303vw */
 }
 
 .column div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .column:first-child {
@@ -238,72 +232,31 @@ input:focus {
 .column label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;        /* 28px → 1.75rem */
     color: var(--main-color);
 }
 
 .column input {
-    height: 4vh;
+    height: 1.990vw;           /* 4vh → 1.990vw */
     font-family: 'VestiSans';
-    font-size: 27px;
+    font-size: 1.6875rem;      /* 27px → 1.6875rem */
     color: var(--main-color);
     text-align: center;
 }
 
 input[id="date"] {
     width: 6.5vw;
-    margin-left: 9.6vw;
 }
-
-input[id="duration"] {
-    width: 7.3vw;
-    margin-left: 1.79vw;
-}
-
-input[id="genre"] {
-    width: 9.5vw;
-    margin-left: 5.79vw;
-}
-
-input[id="quantity"] {
-    width: 1.6vw;
-    margin-left: 6.01vw;
-}
-
-input[id="restrictions"] {
-    width: 3.9vw;
-    margin-left: 5.65vw;
-}
-
-input[id="hb"] {
-    width: 3.9vw;
-    margin-left: 13.65vw;
-}
-
-input[id="quantity1"] {
-    width: 2.45vw;
-    margin-left: 1.17vw;
-}
-
-input[id="test"] {
-    width: 4vw;
-    margin-left: 1.65vw;
-}
-
-input[id="subgenre"] {
-    width: 9.5vw;
-    margin-left: 1.75vw;
-}
-
-input[id="collected"] {
-    width: 1.6vw;
-    margin-left: 9.99vw;
-}
-
-input[id="level"] {
-    width: 2.5vw;
-    margin-left: 9.3vw;
-}
+input[id="duration"] { width: 7.3vw; }
+input[id="genre"] { width: 9.5vw; }
+input[id="quantity"] { width: 1.6vw; }
+input[id="restrictions"] { width: 3.9vw; }
+input[id="hb"] { width: 3.9vw; }
+input[id="quantity1"] { width: 2.45vw; }
+input[id="test"] { width: 4vw; }
+input[id="subgenre"] { width: 9.5vw; }
+input[id="collected"] { width: 1.6vw; }
+input[id="level"] { width: 2.5vw; }
 
 textarea {
     border: none;
@@ -318,7 +271,7 @@ textarea {
 }
 
 .second-group {
-    margin-top: 16vh;
+    margin-top: 7.958vw;       /* 16vh → 7.958vw */
     gap: 1.9vw;
     display: flex;
 }
@@ -331,15 +284,15 @@ textarea {
 .description-group label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;        /* 28px → 1.75rem */
     color: var(--main-color);
 }
 
 textarea {
     width: 29vw !important;
-    height: 55.52vh;
+    height: 27.621vw;          /* 55.52vh → 27.621vw */
     font-family: 'VestiSans';
-    font-size: 28px;
+    font-size: 1.75rem;        /* 28px → 1.75rem */
     color: var(--main-color);
     line-height: 150%;
     text-align: justify;
@@ -347,6 +300,6 @@ textarea {
 }
 
 .description-group:last-child {
-    margin-left: 6px;
+    margin-left: 0.313vw;      /* 6px → 0.313vw */
 }
 </style>

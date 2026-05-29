@@ -228,7 +228,8 @@ section {
 
 .paper {
     width: 79vw;
-    height: 199.17vh;
+    height: 99.074vw;          /* 199.17vh → 99.074vw */
+    min-height: 100vh;
     background-image: url('@/assets/Bg-paper-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -239,9 +240,9 @@ section {
 }
 
 .cards {
-    margin-top: 155px;
+    margin-top: 8.073vw;       /* 155px → 8.073vw */
     width: 67.75vw;
-    height: 166.82vh;
+    height: 82.976vw;          /* 166.82vh → 82.976vw */
     background: url('@/assets/Bg-form-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -249,37 +250,37 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 125px;
+    gap: 6.510vw;              /* 125px → 6.510vw */
 }
 
 .card {
     display: flex;
-    width: 1300px;
+    width: 67.708vw;           /* 1300px → 67.708vw */
     flex-shrink: 0;
-    min-height: 701px;
+    min-height: 36.510vw;      /* 701px → 36.510vw */
 }
 
 .card-column:first-child {
     position: relative;
-    width: 242px;
-    height: 663px;
+    width: 12.604vw;           /* 242px → 12.604vw */
+    height: 34.531vw;          /* 663px → 34.531vw */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 45px;
-    margin-top: 38px;
+    margin-left: 2.344vw;      /* 45px → 2.344vw */
+    margin-top: 1.979vw;       /* 38px → 1.979vw */
 }
 
 .card-column img {
-    width: 200px;
-    height: 200px;
+    width: 10.417vw;           /* 200px → 10.417vw */
+    height: 10.417vw;
 }
 
 .reviews {
-    margin-top: 48px;
-    gap: 7px;
-    height: 321px;
-    width: 242px;
+    margin-top: 2.5vw;         /* 48px → 2.5vw */
+    gap: 0.365vw;              /* 7px → 0.365vw */
+    height: 16.719vw;          /* 321px → 16.719vw */
+    width: 12.604vw;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none; 
@@ -289,8 +290,8 @@ section {
 }
 
 .review {
-    width: 228px;
-    height: 75px !important;
+    width: 11.875vw;           /* 228px → 11.875vw */
+    height: 3.906vw !important;/* 75px → 3.906vw */
     background-image: url('@/assets/Bg-form-review-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -306,9 +307,9 @@ section {
 }
 
 .review-column:first-child {
-    width: 59px;
-    height: 59px;
-    margin-left: 8px;
+    width: 3.073vw;            /* 59px → 3.073vw */
+    height: 3.073vw;
+    margin-left: 0.417vw;      /* 8px → 0.417vw */
 }
 
 .review-column:first-child a {
@@ -322,42 +323,41 @@ section {
 }
 
 .review-column:nth-child(2) {
-    margin-left: 2px;
-    gap: 13px;
+    margin-left: 0.104vw;      /* 2px → 0.104vw */
+    gap: 0.677vw;              /* 13px → 0.677vw */
 }
 
 .review-column:nth-child(2) span {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 13px;
-    color: var(--main-color);
+    font-size: 0.8125rem;      /* 13px → 0.8125rem */
 }
 
 .review-column:last-child {
-    margin-left: 11px;
-    gap: 8px;
+    margin-left: 0.573vw;      /* 11px → 0.573vw */
+    gap: 0.417vw;              /* 8px → 0.417vw */
 }
 
 .review-column:last-child img {
-    width: 22px;
-    height: 23px;
+    width: 1.146vw;            /* 22px → 1.146vw */
+    height: 1.198vw;           /* 23px → 1.198vw */
 }
 
 .review-column:last-child div {
-    gap: 4px;
+    gap: 0.208vw;              /* 4px → 0.208vw */
     display: flex;
 }
 
 .create-review {
-    margin-top: 7px;
-    width: 228px;
-    height: 75px;
+    margin-top: 0.365vw;       /* 7px → 0.365vw */
+    width: 11.875vw;
+    height: 3.906vw;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;         /* 24px → 1.5rem */
     color: var(--base-red);
     transition: color 0.3s ease;
 }
@@ -369,8 +369,8 @@ section {
 .create-review::before {
     content: '';
     position: absolute;
-    width: 228px;
-    height: 75px;
+    width: 11.875vw;
+    height: 3.906vw;
     background-image: url('@/assets/Bg-form-createReview.png');
     background-size: 100% 100%;
     background-position: center;
@@ -387,8 +387,8 @@ section {
 .create-review::after {
     content: '';
     position: absolute;
-    width: 228px;
-    height: 75px;
+    width: 11.875vw;
+    height: 3.906vw;
     background-image: url('@/assets/Bg-form-createReview-hover.png');
     background-size: 100% 100%;
     background-position: center;
@@ -402,21 +402,19 @@ section {
     opacity: 1;
 }
 
-/* new style for createReview */
-
 .rating-group {
     display: flex;
-    gap: 4px;
+    gap: 0.208vw;
 }
 
 .rating-star {
     display: flex;
-    gap: 4px;
+    gap: 0.208vw;
 }
 
 .rating-star img {
-    width: 22px;
-    height: 23px;
+    width: 1.146vw;
+    height: 1.198vw;
     cursor: pointer;
     transition: transform 0.1s;
 }
@@ -425,26 +423,25 @@ section {
     transform: scale(1.1);
 }
 
-/* Кнопки действий */
 .form-actions {
     position: absolute;
-    bottom: -35px;
+    bottom: -1.823vw;          /* -35px → -1.823vw */
     left: 0;
     right: 0;
     display: flex;
-    gap: 10px;
+    gap: 0.521vw;              /* 10px → 0.521vw */
     justify-content: center;
     z-index: 10;
 }
 
 .save-btn,
 .cancel-btn {
-    padding: 4px 12px;
+    padding: 0.208vw 0.625vw;  /* 4px 12px → 0.208vw 0.625vw */
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75rem;        /* 12px → 0.75rem */
     border: none;
-    border-radius: 4px;
+    border-radius: 0.208vw;    /* 4px → 0.208vw */
     cursor: pointer;
     transition: opacity 0.2s;
 }
@@ -465,24 +462,24 @@ section {
 }
 
 .card-column:last-child {
-    margin-left: 91px;
+    margin-left: 4.740vw;      /* 91px → 4.740vw */
 }
 
 .title {
     display: flex;
-    margin-left: 232px;
-    width: 670px;
+    margin-left: 12.083vw;     /* 232px → 12.083vw */
+    width: 34.896vw;           /* 670px → 34.896vw */
     justify-content: space-between;
 }
 
 h1 {
     font-family: 'Caveat';
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 .title a {
-    margin-top: 22px;
+    margin-top: 1.146vw;       /* 22px → 1.146vw */
 }
 
 .title svg {
@@ -495,35 +492,35 @@ h1 {
 }
 
 .info {
-    margin-top: 70px;
+    margin-top: 3.646vw;       /* 70px → 3.646vw */
     display: flex;
-    gap: 23px;
+    gap: 1.198vw;              /* 23px → 1.198vw */
 }
 
 .info-column {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.302vw;              /* 25px → 1.302vw */
 }
 
 .info-column div {
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .info-column div span {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .info-column:first-child div {
-    width: 448px;
+    width: 23.333vw;           /* 448px → 23.333vw */
 }
 
 .info-column:last-child div {
-    width: 361px;
+    width: 18.802vw;           /* 361px → 18.802vw */
 }
 </style>

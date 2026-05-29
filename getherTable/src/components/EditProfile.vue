@@ -198,7 +198,8 @@ section {
 
 .paper {
     width: 79vw;
-    height: 199.17vh;
+    height: 99.074vw;          /* 199.17vh → 99.074vw */
+    min-height: 100vh;
     background-image: url('@/assets/Bg-paper-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -209,9 +210,9 @@ section {
 }
 
 .cards {
-    margin-top: 155px;
+    margin-top: 8.073vw;       /* 155px → 8.073vw */
     width: 67.75vw;
-    height: 166.82vh;
+    height: 82.976vw;          /* 166.82vh → 82.976vw */
     background: url('@/assets/Bg-form-editProfile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -219,32 +220,30 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 125px;
+    gap: 6.510vw;              /* 125px → 6.510vw */
 }
 
 .card {
     display: flex;
-    width: 1300px;
+    width: 67.708vw;           /* 1300px → 67.708vw */
     flex-shrink: 0;
-    min-height: 701px;
+    min-height: 36.510vw;      /* 701px → 36.510vw */
 }
 
 .card-column:first-child {
     position: relative;
-    width: 242px;
-    height: 663px;
+    width: 12.604vw;           /* 242px → 12.604vw */
+    height: 34.531vw;          /* 663px → 34.531vw */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 45px;
-    margin-top: 38px;
+    margin-left: 2.344vw;      /* 45px → 2.344vw */
+    margin-top: 1.979vw;       /* 38px → 1.979vw */
 }
 
-/* ============================ */
-
 .upload-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 10.417vw;           /* 200px → 10.417vw */
+    height: 10.417vw;          /* 200px → 10.417vw */
     background-image: url('@/assets/Bg-form-editProfile-avatar.png');
     background-size: 100% 100%;
     background-position: center;
@@ -255,7 +254,6 @@ section {
     display: none;
 }
 
-/* Рамка для загрузки */
 .upload-frame {
     width: 100%;
     height: 100%;
@@ -264,50 +262,46 @@ section {
     background-image: url('@/assets/Logo.png');
 }
 
-/* Текст */
 .upload-text {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 18px;
+    font-size: 1.125rem;       /* 18px → 1.125rem */
     color: var(--base-red);
     cursor: pointer;
     transform: translateY(-6%);
     transition: all 0.3s ease;
 }
 
-.upload-wrapper:hover .upload-text{
+.upload-wrapper:hover .upload-text {
     color: var(--base-blue);
 }
 
-/* После выбора картинки */
 .upload-frame.has-image {
     background-size: cover;
     background-position: center;
     border: none;
 }
 
-/* ============================== */
-
 .card-column:last-child {
-    margin-left: 91px;
+    margin-left: 4.740vw;      /* 91px → 4.740vw */
 }
 
 .title {
     display: flex;
-    margin-left: 232px;
-    width: 670px;
+    margin-left: 12.083vw;     /* 232px → 12.083vw */
+    width: 34.896vw;           /* 670px → 34.896vw */
     justify-content: space-between;
 }
 
 h1 {
     font-family: 'Caveat';
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2.375rem;       /* 38px → 2.375rem */
 }
 
 .title a {
-    margin-top: 22px;
+    margin-top: 1.146vw;       /* 22px → 1.146vw */
 }
 
 .title svg {
@@ -320,15 +314,15 @@ h1 {
 }
 
 .info {
-    margin-top: 52px;
+    margin-top: 2.708vw;       /* 52px → 2.708vw */
     display: flex;
-    gap: 23px;
+    gap: 1.198vw;              /* 23px → 1.198vw */
 }
 
 .info-column {
     display: flex;
     flex-direction: column;
-    gap: 24.5px;
+    gap: 1.276vw;              /* 24.5px → 1.276vw */
 }
 
 input {
@@ -341,7 +335,6 @@ input {
     color: inherit;
     width: auto;
     height: auto;
-
     box-shadow: none;
     -webkit-appearance: none;
     appearance: none;
@@ -356,14 +349,14 @@ input:focus {
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 28px;
+    font-size: 1.75rem;        /* 28px → 1.75rem */
     text-align: center;
 }
 
 .info-column span {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .info-column div {
@@ -372,34 +365,29 @@ input:focus {
 }
 
 .info-column:first-child div {
-    width: 454px;
+    width: 23.646vw;           /* 454px → 23.646vw */
 }
 
 .info-column:last-child div {
-    width: 354px;
+    width: 18.438vw;           /* 354px → 18.438vw */
 }
 
 input[id="name"] {
-    width: 382px;
+    width: 19.896vw;           /* 382px → 19.896vw */
 }
-
 input[id="year"] {
-    width: 224px;
+    width: 11.667vw;           /* 224px → 11.667vw */
 }
-
 input[id="jenre"] {
-    width: 212px;
+    width: 11.042vw;           /* 212px → 11.042vw */
 }
-
 input[id="count"] {
-    width: 148px;
+    width: 7.708vw;            /* 148px → 7.708vw */
 }
-
 input[id="hb"] {
-    width: 63px;
+    width: 3.281vw;            /* 63px → 3.281vw */
 }
-
 input[id="namev2"] {
-    width: 276px;
+    width: 14.375vw;           /* 276px → 14.375vw */
 }
 </style>
