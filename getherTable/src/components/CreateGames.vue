@@ -145,7 +145,7 @@ input:focus {
     font-family: 'Caveat';
     font-size: 4rem;
     font-weight: bold;
-    color: var(--main-color);
+    color: var(--base-color);
     text-align: center;
 }
 
@@ -174,15 +174,20 @@ input:focus {
     transition: all 0.3s ease;
 }
 
+.upload-label:hover .upload-text {
+    color: var(--active-color);
+}
+
 /* Текст */
 .upload-text {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
     font-size: 1.75rem;    /* 28px → 1.75rem */
-    color: var(--base-red);
+    color: var(--detail-color);
     cursor: pointer;
     transform: translateY(-86%);
+    transition: all 0.25s ease;
 }
 
 /* После выбора картинки */
@@ -225,14 +230,14 @@ input:focus {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 1.75rem;    /* 28px → 1.75rem */
-    color: var(--main-color);
+    color: var(--base-color);
 }
 
 .column input {
     height: 1.990vw;       /* 4vh → 1.990vw */
     font-family: 'VestiSans';
     font-size: 1.6875rem;  /* 27px → 1.6875rem */
-    color: var(--main-color);
+    color: var(--base-color);
     text-align: center;
 }
 
@@ -307,7 +312,7 @@ textarea {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 1.75rem;    /* 28px → 1.75rem */
-    color: var(--main-color);
+    color: var(--base-color);
 }
 
 textarea {
@@ -315,7 +320,7 @@ textarea {
     height: 27.621vw;      /* 55.52vh → 27.621vw */
     font-family: 'VestiSans';
     font-size: 1.75rem;    /* 28px → 1.75rem */
-    color: var(--main-color);
+    color: var(--base-color);
     line-height: 150%;
 }
 

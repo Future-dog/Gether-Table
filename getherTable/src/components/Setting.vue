@@ -33,7 +33,7 @@ section {
 
 .paper {
     width: 79vw;
-    height: 49.740vw;          /* 100vh → 49.740vw */
+    height: 49.740vw;
     min-height: 100vh;
     background-image: var(--Bg-setting);
     background-size: 100% 100%;
@@ -46,20 +46,20 @@ section {
 }
 
 .button {
-    width: 41.719vw;           /* 801px → 41.719vw */
-    height: 21.875vw;          /* 420px → 21.875vw */
+    width: 41.719vw;
+    height: 21.875vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--red-color);
+    color: var(--detail-color);
     font-family: 'VestiSans';
-    font-size: 2.5rem;         /* 40px → 2.5rem */
+    font-size: 2.5rem;
     font-weight: bold;
     transition: color 0.2s ease;
 }
 
 .button:hover {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .button::before {

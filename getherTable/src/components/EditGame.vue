@@ -98,7 +98,7 @@ section {
 
 .paper {
     width: 80vw;
-    height: 75.605vw;          /* 152vh → 75.605vw */
+    height: 75.605vw;
     min-height: 100vh;
     background-image: url('@/assets/Bg-paper-createGames.png');
     background-size: 100% 100%;
@@ -110,9 +110,9 @@ section {
 }
 
 form {
-    margin-top: 7.292vw;       /* 140px → 7.292vw */
+    margin-top: 7.292vw;
     width: 61.5vw;
-    height: 65.657vw;          /* 132vh → 65.657vw */
+    height: 65.657vw;
     min-height: 100vh;
     background: url('@/assets/Bg-form-createGames.png');
     background-size: 100% 100%;
@@ -144,26 +144,26 @@ input:focus {
 }
 
 .name {
-    margin-top: 0.249vw;       /* 0.5vh → 0.249vw */
+    margin-top: 0.249vw;
     width: 61vw;
-    height: 4.029vw;           /* 8.1vh → 4.029vw */
+    height: 4.029vw;
     font-family: 'Caveat';
-    font-size: 4rem;           /* 64px → 4rem */
+    font-size: 4rem;
     font-weight: bold;
-    color: var(--main-color);
+    color: var(--base-color);
     text-align: center;
 }
 
 .first-group {
     display: flex;
     justify-content: flex-start;
-    margin-top: 2.238vw;       /* 4.5vh → 2.238vw */
+    margin-top: 2.238vw;
     gap: 6.5vw;
 }
 
 .upload-wrapper {
     width: 14.17vw;
-    height: 21.439vw;          /* 43.1vh → 21.439vw */
+    height: 21.439vw;
 }
 
 .upload-label input {
@@ -185,15 +185,15 @@ input:focus {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 1.75rem;        /* 28px → 1.75rem */
-    color: var(--base-red);
+    font-size: 1.75rem;
+    color: var(--detail-color);
     cursor: pointer;
     transform: translateY(-5%);
     transition: color 0.2s ease;
 }
 
 .upload-wrapper:hover .upload-text {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .upload-frame.has-image {
@@ -203,7 +203,7 @@ input:focus {
 }
 
 .columns {
-    margin-top: 0.746vw;       /* 1.5vh → 0.746vw */
+    margin-top: 0.746vw;
     display: flex;
     gap: 1.2vw;
     margin-right: 1vw;
@@ -212,7 +212,7 @@ input:focus {
 .column {
     display: flex;
     flex-direction: column;
-    gap: 1.303vw;              /* 2.62vh → 1.303vw */
+    gap: 1.303vw;
 }
 
 .column div {
@@ -232,21 +232,19 @@ input:focus {
 .column label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 1.75rem;        /* 28px → 1.75rem */
-    color: var(--main-color);
+    font-size: 1.75rem;
+    color: var(--base-color);
 }
 
 .column input {
-    height: 1.990vw;           /* 4vh → 1.990vw */
+    height: 1.990vw;
     font-family: 'VestiSans';
-    font-size: 1.6875rem;      /* 27px → 1.6875rem */
-    color: var(--main-color);
+    font-size: 1.6875rem;
+    color: var(--base-color);
     text-align: center;
 }
 
-input[id="date"] {
-    width: 6.5vw;
-}
+input[id="date"] { width: 6.5vw; }
 input[id="duration"] { width: 7.3vw; }
 input[id="genre"] { width: 9.5vw; }
 input[id="quantity"] { width: 1.6vw; }
@@ -271,7 +269,7 @@ textarea {
 }
 
 .second-group {
-    margin-top: 7.958vw;       /* 16vh → 7.958vw */
+    margin-top: 7.958vw;
     gap: 1.9vw;
     display: flex;
 }
@@ -284,22 +282,22 @@ textarea {
 .description-group label {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 1.75rem;        /* 28px → 1.75rem */
-    color: var(--main-color);
+    font-size: 1.75rem;
+    color: var(--base-color);
 }
 
 textarea {
     width: 29vw !important;
-    height: 27.621vw;          /* 55.52vh → 27.621vw */
+    height: 27.621vw;
     font-family: 'VestiSans';
-    font-size: 1.75rem;        /* 28px → 1.75rem */
-    color: var(--main-color);
+    font-size: 1.75rem;
+    color: var(--base-color);
     line-height: 150%;
     text-align: justify;
     overflow-x: hidden;
 }
 
 .description-group:last-child {
-    margin-left: 0.313vw;      /* 6px → 0.313vw */
+    margin-left: 0.313vw;
 }
 </style>

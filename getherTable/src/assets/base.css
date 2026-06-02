@@ -1,5 +1,25 @@
 :root,
 [data-theme="light"]{
+    --base-color:#292929;
+    --detail-color:#780000;
+    --back-color: #DBDBD9;
+    --active-color: #188A8A;
+    --base-green: #006F00;
+
+    --Bg-setting: url('@/assets/Bg-paper-setting.png');
+}
+
+[data-theme="dark"] {
+    --base-color:#DBDBD9;
+    --detail-color:#0eafaf;
+    --back-color: #292929;
+    --active-color: #780000;
+    --base-green: #039e03;
+
+    --Bg-setting: url('@/assets/Bg-leather-setting.png');
+}
+/* 
+[data-theme="light"]{
     --main-color:#292929;
     --red-color:#920106;
     --figure_seal-color:#780000;
@@ -21,7 +41,7 @@
     --base-green: #006F00;
 
     --Bg-setting: url('@/assets/Bg-leather-setting.png');
-}
+} */
 
 html {
     font-size: 16px;

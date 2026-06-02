@@ -132,8 +132,8 @@ section {
 }
 
 .paper {
-    width: 78.958vw;           /* 1516px → 78.958vw */
-    height: 91.146vw;          /* 1750px → 91.146vw */
+    width: 78.958vw;
+    height: 91.146vw;
     min-height: 100vh;
     background-image: url('@/assets/Bg-paper-game.png');
     background-size: 100% 100%;
@@ -145,7 +145,7 @@ section {
 }
 
 .form {
-    margin-top: 6.823vw;       /* 131px → 6.823vw */
+    margin-top: 6.823vw;
     width: 61.5vw;
     display: flex;
     flex-direction: column;
@@ -173,34 +173,34 @@ input:focus {
 }
 
 .name {
-    margin-top: 0.249vw;       /* 0.5vh → 0.249vw */
+    margin-top: 0.249vw;
     width: 61vw;
-    height: 4.029vw;           /* 8.1vh → 4.029vw */
+    height: 4.029vw;
     font-family: 'Caveat';
     font-size: 4rem;
     font-weight: bold;
-    color: var(--main-color);
+    color: var(--base-color);
     text-align: center;
 }
 
 .first-group {
-    width: 61.563vw;           /* 1182px → 61.563vw */
-    height: 22.240vw;          /* 427px → 22.240vw */
+    width: 61.563vw;
+    height: 22.240vw;
     background: url('@/assets/Bg-form-game.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
-    margin-top: 2.238vw;       /* 4.5vh → 2.238vw */
-    gap: 6.406vw;              /* 123px → 6.406vw */
+    margin-top: 2.238vw;
+    gap: 6.406vw;
 }
 
 .upload-wrapper {
-    margin-top: 0.208vw;       /* 4px → 0.208vw */
-    margin-left: 0.156vw;      /* 3px → 0.156vw */
-    width: 14.583vw;           /* 280px → 14.583vw */
-    height: 21.875vw;          /* 420px → 21.875vw */
+    margin-top: 0.208vw;
+    margin-left: 0.156vw;
+    width: 14.583vw;
+    height: 21.875vw;
 }
 
 .upload-wrapper img {
@@ -209,15 +209,15 @@ input:focus {
 }
 
 .columns {
-    margin-top: 1.198vw;       /* 23px → 1.198vw */
+    margin-top: 1.198vw;
     display: flex;
-    gap: 1.302vw;              /* 25px → 1.302vw */
+    gap: 1.302vw;
 }
 
 .column {
     display: flex;
     flex-direction: column;
-    gap: 1.303vw;              /* 2.62vh → 1.303vw */
+    gap: 1.303vw;
 }
 
 .column div {
@@ -225,37 +225,37 @@ input:focus {
     align-items: center;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 1.7625rem;      /* 28.2px → 1.7625rem */
-    color: var(--main-color);
+    font-size: 1.7625rem;
+    color: var(--base-color);
 }
 
 .column:first-child {
-    width: 19.271vw;           /* 370px → 19.271vw */
+    width: 19.271vw;
 }
 
 .column:last-child {
-    width: 18.490vw;           /* 355px → 18.490vw */
+    width: 18.490vw;
 }
 
 .column label {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 1.75rem;
-    color: var(--main-color);
+    color: var(--base-color);
 }
 
 .description-group div {
     font-family: 'VestiSans';
     font-size: 1.75rem;
-    color: var(--main-color);
-    width: 29.740vw;           /* 571px → 29.740vw */
+    color: var(--base-color);
+    width: 29.740vw;
     line-height: 150%;
     text-align: justify;
 }
 
 .second-group {
-    margin-top: 7.958vw;       /* 16vh → 7.958vw */
-    gap: 1.823vw;              /* 35px → 1.823vw */
+    margin-top: 7.958vw;
+    gap: 1.823vw;
     display: flex;
 }
 
@@ -268,12 +268,12 @@ input:focus {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 1.75rem;
-    color: var(--main-color);
+    color: var(--base-color);
 }
 
 .master-card {
-    margin-top: 3.125vw;       /* 60px → 3.125vw */
-    gap: 0.833vw;              /* 16px → 0.833vw */
+    margin-top: 3.125vw;
+    gap: 0.833vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,17 +283,17 @@ input:focus {
     font-family: 'VestiSans';
     font-weight: bold;
     font-size: 1.75rem;
-    color: var(--main-color);
+    color: var(--base-color);
 }
 
 .card-background {
-    width: 61.563vw;           /* 1182px → 61.563vw */
-    height: 14.583vw;          /* 280px → 14.583vw */
+    width: 61.563vw;
+    height: 14.583vw;
     background: url('@/assets/Bg-form-game-masterCard.png');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 1.823vw;          /* 35px → 1.823vw */
+    padding: 1.823vw;
     display: flex;
 }
 
@@ -305,38 +305,39 @@ input:focus {
 }
 
 .card-column:first-child img {
-    width: 7.813vw;            /* 150px → 7.813vw */
+    width: 7.813vw;
     height: 7.813vw;
 }
 
 .card-column:first-child span {
     font-family: 'Caveat';
     font-weight: bold;
-    font-size: 1.5rem;         /* 24px → 1.5rem */
+    font-size: 1.5rem;
+    color: var(--base-color);
 }
 
 .card-column:nth-child(2) {
-    margin-left: 3.021vw;      /* 58px → 3.021vw */
-    margin-top: 0.156vw;       /* 3px → 0.156vw */
+    margin-left: 3.021vw;
+    margin-top: 0.156vw;
 }
 
 .info {
-    margin-top: 0.260vw;       /* 5px → 0.260vw */
+    margin-top: 0.260vw;
     display: flex;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    gap: 1.458vw;              /* 28px → 1.458vw */
+    gap: 1.458vw;
 }
 
 .text div {
-    width: 13.021vw;           /* 250px → 13.021vw */
+    width: 13.021vw;
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 1.125rem;       /* 18px → 1.125rem */
+    font-size: 1.125rem;
 }
 
 .text div span {
@@ -344,13 +345,13 @@ input:focus {
 }
 
 .dop-text {
-    margin-left: 1.458vw;      /* 28px → 1.458vw */
+    margin-left: 1.458vw;
     margin-top: 1.458vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.458vw;
-    width: 11.771vw;           /* 226px → 11.771vw */
+    width: 11.771vw;
 }
 
 .dop-text span {
@@ -364,34 +365,34 @@ input:focus {
 }
 
 .title-text span:last-child {
-    margin-left: 3.594vw;      /* 69px → 3.594vw */
+    margin-left: 3.594vw;
 }
 
 .rating {
     display: flex;
     justify-content: space-between;
-    width: 10.833vw;           /* 208px → 10.833vw */
+    width: 10.833vw;
 }
 
 .rating div {
-    width: 3.854vw;            /* 74px → 3.854vw */
+    width: 3.854vw;
     display: flex;
     justify-content: center;
-    gap: 0.208vw;              /* 4px → 0.208vw */
+    gap: 0.208vw;
 }
 
 .rating img {
-    width: 1.146vw;            /* 22px → 1.146vw */
-    height: 1.198vw;           /* 23px → 1.198vw */
+    width: 1.146vw;
+    height: 1.198vw;
 }
 
 .card-column:last-child {
-    margin-left: 3.021vw;      /* 58px → 3.021vw */
-    width: 17.448vw;           /* 335px → 17.448vw */
+    margin-left: 3.021vw;
+    width: 17.448vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.625vw;       /* 12px → 0.625vw */
+    margin-top: 0.625vw;
     font-family: 'VestiSans';
     font-size: 1.125rem;
     color: var(--base-color);
@@ -399,30 +400,30 @@ input:focus {
 }
 
 .game-title:first-child {
-    margin-top: 0.833vw;       /* 16px → 0.833vw */
+    margin-top: 0.833vw;
 }
 
 .game-title {
-    margin-top: 0.182vw;       /* 3.5px → 0.182vw */
+    margin-top: 0.182vw;
     font-family: 'VestiSans';
     font-size: 1.125rem;
     font-weight: normal;
-    color: var(--red-color);
+    color: var(--detail-color);
     transition: color 0.2s ease;
     cursor: pointer;
 }
 
 .game-title:hover {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .game-title::before {
-    top: 1.563vw;              /* 30px → 1.563vw */
+    top: 1.563vw;
     position: relative;
     display: block;
     content: '';
     width: 100%;
-    height: 0.208vw;           /* 4px → 0.208vw */
+    height: 0.208vw;
     background-image: url('@/assets/Bg-line-game.png');
     background-size: 100% 100%;
     background-position: center;
@@ -437,7 +438,7 @@ input:focus {
 }
 
 .game-title::after {
-    top: -0.052vw;             /* -1px → -0.052vw */
+    top: -0.052vw;
     position: relative;
     display: block;
     content: '';

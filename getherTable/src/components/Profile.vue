@@ -224,11 +224,12 @@ section {
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none; 
+    color: var(--base-color);
 }
 
 .paper {
     width: 79vw;
-    height: 99.074vw;          /* 199.17vh → 99.074vw */
+    height: 99.074vw;
     min-height: 100vh;
     background-image: url('@/assets/Bg-paper-profile.png');
     background-size: 100% 100%;
@@ -240,9 +241,9 @@ section {
 }
 
 .cards {
-    margin-top: 8.073vw;       /* 155px → 8.073vw */
+    margin-top: 8.073vw;
     width: 67.75vw;
-    height: 82.976vw;          /* 166.82vh → 82.976vw */
+    height: 82.976vw;
     background: url('@/assets/Bg-form-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -250,36 +251,36 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6.510vw;              /* 125px → 6.510vw */
+    gap: 6.510vw;
 }
 
 .card {
     display: flex;
-    width: 67.708vw;           /* 1300px → 67.708vw */
+    width: 67.708vw;
     flex-shrink: 0;
-    min-height: 36.510vw;      /* 701px → 36.510vw */
+    min-height: 36.510vw;
 }
 
 .card-column:first-child {
     position: relative;
-    width: 12.604vw;           /* 242px → 12.604vw */
-    height: 34.531vw;          /* 663px → 34.531vw */
+    width: 12.604vw;
+    height: 34.531vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 2.344vw;      /* 45px → 2.344vw */
-    margin-top: 1.979vw;       /* 38px → 1.979vw */
+    margin-left: 2.344vw;
+    margin-top: 1.979vw;
 }
 
 .card-column img {
-    width: 10.417vw;           /* 200px → 10.417vw */
+    width: 10.417vw;
     height: 10.417vw;
 }
 
 .reviews {
-    margin-top: 2.5vw;         /* 48px → 2.5vw */
-    gap: 0.365vw;              /* 7px → 0.365vw */
-    height: 16.719vw;          /* 321px → 16.719vw */
+    margin-top: 2.5vw;
+    gap: 0.365vw;
+    height: 16.719vw;
     width: 12.604vw;
     overflow-y: auto;
     overflow-x: hidden;
@@ -290,8 +291,8 @@ section {
 }
 
 .review {
-    width: 11.875vw;           /* 228px → 11.875vw */
-    height: 3.906vw !important;/* 75px → 3.906vw */
+    width: 11.875vw;
+    height: 3.906vw !important;
     background-image: url('@/assets/Bg-form-review-profile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -307,9 +308,9 @@ section {
 }
 
 .review-column:first-child {
-    width: 3.073vw;            /* 59px → 3.073vw */
+    width: 3.073vw;
     height: 3.073vw;
-    margin-left: 0.417vw;      /* 8px → 0.417vw */
+    margin-left: 0.417vw;
 }
 
 .review-column:first-child a {
@@ -323,33 +324,34 @@ section {
 }
 
 .review-column:nth-child(2) {
-    margin-left: 0.104vw;      /* 2px → 0.104vw */
-    gap: 0.677vw;              /* 13px → 0.677vw */
+    margin-left: 0.104vw;
+    gap: 0.677vw;
 }
 
 .review-column:nth-child(2) span {
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 0.8125rem;      /* 13px → 0.8125rem */
+    font-size: 0.8125rem;
+    color: var(--base-color);
 }
 
 .review-column:last-child {
-    margin-left: 0.573vw;      /* 11px → 0.573vw */
-    gap: 0.417vw;              /* 8px → 0.417vw */
+    margin-left: 0.573vw;
+    gap: 0.417vw;
 }
 
 .review-column:last-child img {
-    width: 1.146vw;            /* 22px → 1.146vw */
-    height: 1.198vw;           /* 23px → 1.198vw */
+    width: 1.146vw;
+    height: 1.198vw;
 }
 
 .review-column:last-child div {
-    gap: 0.208vw;              /* 4px → 0.208vw */
+    gap: 0.208vw;
     display: flex;
 }
 
 .create-review {
-    margin-top: 0.365vw;       /* 7px → 0.365vw */
+    margin-top: 0.365vw;
     width: 11.875vw;
     height: 3.906vw;
     display: flex;
@@ -357,13 +359,13 @@ section {
     justify-content: center;
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 1.5rem;         /* 24px → 1.5rem */
-    color: var(--base-red);
+    font-size: 1.5rem;
+    color: var(--detail-color);
     transition: color 0.3s ease;
 }
 
 .create-review:hover {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .create-review::before {
@@ -425,23 +427,23 @@ section {
 
 .form-actions {
     position: absolute;
-    bottom: -1.823vw;          /* -35px → -1.823vw */
+    bottom: -1.823vw;
     left: 0;
     right: 0;
     display: flex;
-    gap: 0.521vw;              /* 10px → 0.521vw */
+    gap: 0.521vw;
     justify-content: center;
     z-index: 10;
 }
 
 .save-btn,
 .cancel-btn {
-    padding: 0.208vw 0.625vw;  /* 4px 12px → 0.208vw 0.625vw */
+    padding: 0.208vw 0.625vw;
     font-family: 'VestiSans';
     font-weight: bold;
-    font-size: 0.75rem;        /* 12px → 0.75rem */
+    font-size: 0.75rem;
     border: none;
-    border-radius: 0.208vw;    /* 4px → 0.208vw */
+    border-radius: 0.208vw;
     cursor: pointer;
     transition: opacity 0.2s;
 }
@@ -462,13 +464,13 @@ section {
 }
 
 .card-column:last-child {
-    margin-left: 4.740vw;      /* 91px → 4.740vw */
+    margin-left: 4.740vw;
 }
 
 .title {
     display: flex;
-    margin-left: 12.083vw;     /* 232px → 12.083vw */
-    width: 34.896vw;           /* 670px → 34.896vw */
+    margin-left: 12.083vw;
+    width: 34.896vw;
     justify-content: space-between;
 }
 
@@ -479,28 +481,28 @@ h1 {
 }
 
 .title a {
-    margin-top: 1.146vw;       /* 22px → 1.146vw */
+    margin-top: 1.146vw;
 }
 
 .title svg {
-    color: var(--base-red);
+    color: var(--detail-color);
     transition: color 0.3s ease;
 }
 
 .title svg:hover {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .info {
-    margin-top: 3.646vw;       /* 70px → 3.646vw */
+    margin-top: 3.646vw;
     display: flex;
-    gap: 1.198vw;              /* 23px → 1.198vw */
+    gap: 1.198vw;
 }
 
 .info-column {
     display: flex;
     flex-direction: column;
-    gap: 1.302vw;              /* 25px → 1.302vw */
+    gap: 1.302vw;
 }
 
 .info-column div {
@@ -517,10 +519,10 @@ h1 {
 }
 
 .info-column:first-child div {
-    width: 23.333vw;           /* 448px → 23.333vw */
+    width: 23.333vw;
 }
 
 .info-column:last-child div {
-    width: 18.802vw;           /* 361px → 18.802vw */
+    width: 18.802vw;
 }
 </style>

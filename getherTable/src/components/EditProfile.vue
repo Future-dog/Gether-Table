@@ -198,7 +198,7 @@ section {
 
 .paper {
     width: 79vw;
-    height: 99.074vw;          /* 199.17vh → 99.074vw */
+    height: 99.074vw;
     min-height: 100vh;
     background-image: url('@/assets/Bg-paper-profile.png');
     background-size: 100% 100%;
@@ -210,9 +210,9 @@ section {
 }
 
 .cards {
-    margin-top: 8.073vw;       /* 155px → 8.073vw */
+    margin-top: 8.073vw;
     width: 67.75vw;
-    height: 82.976vw;          /* 166.82vh → 82.976vw */
+    height: 82.976vw;
     background: url('@/assets/Bg-form-editProfile.png');
     background-size: 100% 100%;
     background-position: center;
@@ -220,30 +220,30 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6.510vw;              /* 125px → 6.510vw */
+    gap: 6.510vw;
 }
 
 .card {
     display: flex;
-    width: 67.708vw;           /* 1300px → 67.708vw */
+    width: 67.708vw;
     flex-shrink: 0;
-    min-height: 36.510vw;      /* 701px → 36.510vw */
+    min-height: 36.510vw;
 }
 
 .card-column:first-child {
     position: relative;
-    width: 12.604vw;           /* 242px → 12.604vw */
-    height: 34.531vw;          /* 663px → 34.531vw */
+    width: 12.604vw;
+    height: 34.531vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 2.344vw;      /* 45px → 2.344vw */
-    margin-top: 1.979vw;       /* 38px → 1.979vw */
+    margin-left: 2.344vw;
+    margin-top: 1.979vw;
 }
 
 .upload-wrapper {
-    width: 10.417vw;           /* 200px → 10.417vw */
-    height: 10.417vw;          /* 200px → 10.417vw */
+    width: 10.417vw;
+    height: 10.417vw;
     background-image: url('@/assets/Bg-form-editProfile-avatar.png');
     background-size: 100% 100%;
     background-position: center;
@@ -266,15 +266,15 @@ section {
     display: block;
     text-align: center;
     font-family: 'VestiSans';
-    font-size: 1.125rem;       /* 18px → 1.125rem */
-    color: var(--base-red);
+    font-size: 1.125rem;
+    color: var(--detail-color);
     cursor: pointer;
     transform: translateY(-6%);
     transition: all 0.3s ease;
 }
 
 .upload-wrapper:hover .upload-text {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .upload-frame.has-image {
@@ -284,45 +284,45 @@ section {
 }
 
 .card-column:last-child {
-    margin-left: 4.740vw;      /* 91px → 4.740vw */
+    margin-left: 4.740vw;
 }
 
 .title {
     display: flex;
-    margin-left: 12.083vw;     /* 232px → 12.083vw */
-    width: 34.896vw;           /* 670px → 34.896vw */
+    margin-left: 12.083vw;
+    width: 34.896vw;
     justify-content: space-between;
 }
 
 h1 {
     font-family: 'Caveat';
     font-weight: bold;
-    font-size: 2.375rem;       /* 38px → 2.375rem */
+    font-size: 2.375rem;
 }
 
 .title a {
-    margin-top: 1.146vw;       /* 22px → 1.146vw */
+    margin-top: 1.146vw;
 }
 
 .title svg {
-    color: var(--base-red);
+    color: var(--detail-color);
     transition: color 0.3s ease;
 }
 
 .title svg:hover {
-    color: var(--base-blue);
+    color: var(--active-color);
 }
 
 .info {
-    margin-top: 2.708vw;       /* 52px → 2.708vw */
+    margin-top: 2.708vw;
     display: flex;
-    gap: 1.198vw;              /* 23px → 1.198vw */
+    gap: 1.198vw;
 }
 
 .info-column {
     display: flex;
     flex-direction: column;
-    gap: 1.276vw;              /* 24.5px → 1.276vw */
+    gap: 1.276vw;
 }
 
 input {
@@ -349,7 +349,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     font-family: 'VestiSans';
-    font-size: 1.75rem;        /* 28px → 1.75rem */
+    font-size: 1.75rem;
     text-align: center;
 }
 
@@ -365,29 +365,17 @@ input:focus {
 }
 
 .info-column:first-child div {
-    width: 23.646vw;           /* 454px → 23.646vw */
+    width: 23.646vw;
 }
 
 .info-column:last-child div {
-    width: 18.438vw;           /* 354px → 18.438vw */
+    width: 18.438vw;
 }
 
-input[id="name"] {
-    width: 19.896vw;           /* 382px → 19.896vw */
-}
-input[id="year"] {
-    width: 11.667vw;           /* 224px → 11.667vw */
-}
-input[id="jenre"] {
-    width: 11.042vw;           /* 212px → 11.042vw */
-}
-input[id="count"] {
-    width: 7.708vw;            /* 148px → 7.708vw */
-}
-input[id="hb"] {
-    width: 3.281vw;            /* 63px → 3.281vw */
-}
-input[id="namev2"] {
-    width: 14.375vw;           /* 276px → 14.375vw */
-}
+input[id="name"] { width: 19.896vw; }
+input[id="year"] { width: 11.667vw; }
+input[id="jenre"] { width: 11.042vw; }
+input[id="count"] { width: 7.708vw; }
+input[id="hb"] { width: 3.281vw; }
+input[id="namev2"] { width: 14.375vw; }
 </style>

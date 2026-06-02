@@ -107,39 +107,39 @@ const sidebarItems = [
 .nav-list {
     padding: 0;
     position: relative;
-    padding-top: 6.302vw;      /* 121px → 6.302vw */
+    padding-top: 6.302vw;
     list-style: none;
 }
 
 .line {
-    padding-top: 0.729vw;      /* 14px → 0.729vw */
-    width: 8.594vw;            /* 165px → 8.594vw */
+    padding-top: 0.729vw;
+    width: 8.594vw;
 }
 
 .sidebar-item-main div {
     font-family: 'Caveat';
-    font-size: 2.25rem;        /* 36px → 2.25rem */
+    font-size: 2.25rem;
     display: flex;
     align-items: center;
-    padding-left: 1.719vw;     /* 33px → 1.719vw */
+    padding-left: 1.719vw;
 }
 
 .sidebar-item-main a {
-    width: 4.948vw;            /* 95px → 4.948vw */
-    color: var(--main-color);
+    width: 4.948vw;
+    color: var(--base-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .sidebar-item-main a:hover {
-    color: var(--paper-color)
+    color: var(--back-color);
 }
 
 .sidebar-item-main a::before {
     content: '';
     position: absolute;
-    width: 4.844vw;            /* 93px → 4.844vw */
-    height: 2.813vw;           /* 54px → 2.813vw */
+    width: 4.844vw;
+    height: 2.813vw;
     margin-left: 1.719vw;
     background-image: var(--bg-sidebar-button-main);
     background-position: center;
@@ -154,22 +154,22 @@ const sidebarItems = [
 }
 
 .sidebar-item a {
-    color: var(--main-color);
+    color: var(--base-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .sidebar-item a:hover {
-    color: var(--paper-color)
+    color: var(--back-color);
 }
 
 .sidebar-item a::before {
     content: '';
     position: absolute;
-    margin-left: 0.521vw;      /* 10px → 0.521vw */
-    margin-top: 0.729vw;       /* 14px → 0.729vw */
-    width: 9.740vw;            /* 187px → 9.740vw */
-    height: 3.125vw;           /* 60px → 3.125vw */
+    margin-left: 0.521vw;
+    margin-top: 0.729vw;
+    width: 9.740vw;
+    height: 3.125vw;
     background-image: var(--bg-sidebar-button);
     background-position: center left;
     background-repeat: no-repeat;
@@ -184,21 +184,21 @@ const sidebarItems = [
 
 .sidebar-item div {
     font-family: 'Caveat';
-    font-size: 1.8125rem;      /* 29px → 1.8125rem */
+    font-size: 1.8125rem;
     display: flex;
     align-items: center;
-    padding-left: 0.521vw;     /* 10px → 0.521vw */
-    padding-top: 0.729vw;      /* 14px → 0.729vw */
-    gap: 0.417vw;              /* 8px → 0.417vw */
+    padding-left: 0.521vw;
+    padding-top: 0.729vw;
+    gap: 0.417vw;
 }
 
 .sidebar-item .line {
-    padding-top: 0.625vw;      /* 12px → 0.625vw */
+    padding-top: 0.625vw;
 }
 
 .bookmark {
-    width: 5.729vw;            /* 110px → 5.729vw */
-    height: 3.021vw;           /* 58px → 3.021vw */
+    width: 5.729vw;
+    height: 3.021vw;
     position: absolute;
     top: 50%;
     left: 90%;
@@ -218,8 +218,8 @@ const sidebarItems = [
     position: fixed;
     top: 20%;
     left: 144%;
-    width: 11.458vw;           /* 220px → 11.458vw */
-    height: 7.813vw;           /* 150px → 7.813vw */
+    width: 11.458vw;
+    height: 7.813vw;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     transition-duration: 300ms;
@@ -233,11 +233,11 @@ const sidebarItems = [
 
 .content_profil {
     position: relative;
-    top: 0.521vw;              /* 10px → 0.521vw */
+    top: 0.521vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.521vw;              /* 10px → 0.521vw */
+    gap: 0.521vw;
 }
 
 .button_prof {
@@ -246,20 +246,20 @@ const sidebarItems = [
     border: none;
     cursor: pointer;
     overflow: hidden;
-    width: 10.156vw;           /* 195px → 10.156vw */
-    height: 1.302vw;           /* 25px → 1.302vw */
+    width: 10.156vw;
+    height: 1.302vw;
 }
 
 .auto_reg {
     font-family: Caveat;
-    font-size: 1.75rem;        /* 28px → 1.75rem */
+    font-size: 1.75rem;
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--base-color);
     transition-duration: 300ms;
 }
 
 .auto_reg:hover {
-    color: var(--red-color);
+    color: var(--detail-color);
     transition-duration: 300ms;
 }
 
@@ -272,8 +272,8 @@ const sidebarItems = [
 @media (max-width: 790px) {
     .sidebar-item a::before {
         margin-left: 0;
-        margin-top: 0.365vw;   /* 7px → 0.365vw */
-        width: 6.771vw;        /* 130px → 6.771vw */
+        margin-top: 0.365vw;
+        width: 6.771vw;
         height: 3.125vw;
     }
 
@@ -282,9 +282,9 @@ const sidebarItems = [
     }
 
     .sidebar-item div {
-        font-size: 1.5rem;     /* 24px → 1.5rem */
+        font-size: 1.5rem;
         padding-left: 0;
-        padding-top: 0.365vw;  /* 7px → 0.365vw */
+        padding-top: 0.365vw;
         gap: 0;
     }
 
@@ -293,12 +293,12 @@ const sidebarItems = [
     }
 
     .sidebar-item-main div {
-        font-size: 1.875rem;   /* 30px → 1.875rem */
+        font-size: 1.875rem;
         padding-left: 1.719vw;
     }
 
     .sidebar-item-main a::before {
-        margin-left: 1.302vw;  /* 25px → 1.302vw */
+        margin-left: 1.302vw;
     }
 
     .bookmark {
@@ -306,7 +306,7 @@ const sidebarItems = [
     }
 
     .line {
-        width: 6.719vw;        /* 129px → 6.719vw */
+        width: 6.719vw;
     }
 }
 </style>

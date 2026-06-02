@@ -135,11 +135,12 @@ const cardsItems = [
     z-index: -1;
 }
 
-.games section {
+section {
     height: 100%;
     width: 100%;
     position: relative;
     z-index: 1;
+    color: var(--base-color);
 }
 
 .background-scroll {
@@ -157,29 +158,24 @@ const cardsItems = [
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
-    /* 100vh → 49.740vw */
 }
 
 .rails {
     position: relative;
     overflow-y: auto;
     width: 44.167vw;
-    /* 848px → 44.167vw */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4.115vw;
-    /* 79px → 4.115vw */
     margin-left: 18.281vw;
-    /* 351px → 18.281vw */
 }
 
 .rails h2 {
     font-family: Caveat;
     font-size: 6rem;
-    /* 96px → 6rem */
 }
 
 a {
@@ -193,11 +189,8 @@ a {
 
 .card {
     width: 41.823vw;
-    /* 803px → 41.823vw */
     height: 14.792vw;
-    /* 284px → 14.792vw */
     margin-top: 0.833vw;
-    /* 16px → 0.833vw */
 }
 
 .card:first-child {
@@ -213,12 +206,9 @@ a {
 .card h3 {
     font-family: Caveat;
     font-size: 1.25rem;
-    /* 20px → 1.25rem */
     font-weight: bold;
     padding-left: 21.302vw;
-    /* 409px → 21.302vw */
     padding-top: 0.156vw;
-    /* 3px → 0.156vw */
 }
 
 .flexer {
@@ -229,28 +219,20 @@ a {
     position: relative;
     z-index: -2;
     max-width: 7.292vw;
-    /* 140px → 7.292vw */
     top: 0.156vw;
     left: 1.875vw;
-    /* 36px → 1.875vw */
 }
 
 .grid-cardtext {
     width: 27.760vw;
-    /* 533px → 27.760vw */
     height: 11.458vw;
-    /* 220px → 11.458vw */
     position: relative;
     left: 4.271vw;
-    /* 82px → 4.271vw */
     bottom: 0.104vw;
-    /* 2px → 0.104vw */
     display: grid;
     grid-template-columns: 10.156vw auto;
-    /* 195px → 10.156vw */
     grid-template-rows: 1fr 1fr 1fr 1fr;
     column-gap: 1.719vw;
-    /* 33px → 1.719vw */
     place-items: center stretch;
 }
 
@@ -259,25 +241,11 @@ a {
     justify-content: space-between;
 }
 
-.grid-item:nth-child(2) {
-    grid-row: 2 / 3;
-}
-
-.grid-item:nth-child(3) {
-    grid-row: 3 / 4;
-}
-
-.grid-item:nth-child(4) {
-    grid-row: 4 / 5;
-}
-
-.grid-item:nth-child(5) {
-    justify-content: center;
-}
-
-.grid-item:last-child {
-    grid-row: 2 / span 3;
-}
+.grid-item:nth-child(2) { grid-row: 2 / 3; }
+.grid-item:nth-child(3) { grid-row: 3 / 4; }
+.grid-item:nth-child(4) { grid-row: 4 / 5; }
+.grid-item:nth-child(5) { justify-content: center; }
+.grid-item:last-child { grid-row: 2 / span 3; }
 
 .signatire {
     font-family: VestiSans;
@@ -293,32 +261,25 @@ a {
 .grid-item p {
     font-family: VestiSans;
     font-size: 1.0625rem;
-    /* 17px → 1.0625rem */
     text-align: justify;
 }
 
 .filter {
     margin-top: 7.813vw;
-    /* 150px → 7.813vw */
     margin-left: 6.146vw;
-    /* 118px → 6.146vw */
 }
 
 .filter-name {
     font-family: VestiSans;
     font-size: 2.5rem;
-    /* 40px → 2.5rem */
     padding-left: 1.563vw;
-    /* 30px → 1.563vw */
 }
 
 .background-filter {
     max-width: 11.563vw;
-    /* 222px → 11.563vw */
     position: relative;
     z-index: 1;
     top: 0.521vw;
-    /* 10px → 0.521vw */
 }
 
 .rails-filter {
@@ -327,7 +288,6 @@ a {
     display: flex;
     flex-direction: column;
     bottom: 67.188vw;
-    /* 1290px → 67.188vw */
 }
 
 .class-filter {
@@ -337,16 +297,13 @@ a {
     max-width: 11.563vw;
     text-align: center;
     padding-bottom: 0.156vw;
-    /* 3px → 0.156vw */
     padding-top: 0.260vw;
-    /* 5px → 0.260vw */
 }
 
 .item-filter {
     font-family: VestiSans;
     font-size: 1.125rem;
     padding-left: 1.719vw;
-    /* 33px → 1.719vw */
     padding-bottom: 0.156vw;
 }
 
@@ -361,9 +318,7 @@ a {
 
 .mens {
     padding-top: 0.625vw;
-    /* 12px → 0.625vw */
     padding-left: 1.719vw;
     padding-bottom: 0.833vw;
-    /* 16px → 0.833vw */
 }
 </style>
